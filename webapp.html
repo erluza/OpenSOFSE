@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Trenes Argentinos | Webapp Oficial OpenSOFSE</title>
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Estilos 100% Idénticos a la App Oficial (Photos-1-001) -->
+    <link rel="stylesheet" href="webapp.css">
+</head>
+<body>
+    <div class="app-device-shell">
+        <!-- 1. Cabecera Oficial Superior (Header Blanco) -->
+        <header class="app-header">
+            <div class="app-brand">
+                <div class="app-train-logo">
+                    <!-- Frente de Tren SVG Idéntico al Logo Oficial -->
+                    <svg width="34" height="34" viewBox="0 0 64 64" fill="none" stroke="#22262e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="12" y="8" width="40" height="42" rx="10" fill="none"/>
+                        <line x1="18" y1="20" x2="46" y2="20" stroke-width="2.5"/>
+                        <line x1="22" y1="8" x2="22" y2="12" stroke-width="3"/>
+                        <line x1="42" y1="8" x2="42" y2="12" stroke-width="3"/>
+                        <circle cx="22" cy="40" r="2.5" fill="#22262e"/>
+                        <circle cx="42" cy="40" r="2.5" fill="#22262e"/>
+                        <line x1="18" y1="48" x2="46" y2="48" stroke-width="3"/>
+                        <line x1="14" y1="56" x2="22" y2="50" stroke-width="3"/>
+                        <line x1="50" y1="56" x2="42" y2="50" stroke-width="3"/>
+                    </svg>
+                </div>
+                <div class="brand-divider"></div>
+                <div class="brand-text-block">
+                    <span class="t-line1">TRENES</span>
+                    <span class="t-line2">ARGENTINOS</span>
+                </div>
+            </div>
+
+            <!-- Acceso Rápido al Portal OpenSOFSE -->
+            <a href="index.html" class="app-portal-return" title="Volver al Portal OpenSOFSE">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Portal</span>
+            </a>
+        </header>
+
+        <!-- 2. Área de Vistas de la Aplicación (Aislamiento Estricto de Pantallas) -->
+        <main class="app-viewport">
+            
+            <!-- ==============================================================
+                 PANTALLA 1: INICIO (HOME - IMG_2553, IMG_2555, IMG_2556)
+                 ============================================================== -->
+            <div id="screen-home" class="app-screen active">
+                <!-- Tarjeta 1: Formulario de Viaje -->
+                <div class="home-card">
+                    <div class="search-inputs-wrapper">
+                        <!-- Indicador visual vertical de trayecto -->
+                        <div class="search-vertical-track-indicator">
+                            <i class="fa-solid fa-location-dot indicator-pin"></i>
+                            <div class="indicator-dashed-line"></div>
+                            <div class="indicator-dot"></div>
+                        </div>
+
+                        <!-- Columnas de Campos de Estación -->
+                        <div class="search-fields-column">
+                            <div class="input-pill-container" id="pill-origin">
+                                <span class="input-pill-text placeholder" id="text-origin">Estación de origen</span>
+                            </div>
+
+                            <div class="input-pill-container" id="pill-dest">
+                                <span class="input-pill-text placeholder" id="text-dest">Estación de destino</span>
+                                <button id="btn-clear-dest" class="btn-clear-field" style="display: none;" title="Limpiar destino">✕</button>
+                            </div>
+                        </div>
+
+                        <!-- Botones Laterales: Favorito e Invertir -->
+                        <div class="search-side-actions">
+                            <button id="btn-fav-toggle" class="btn-icon-side" title="Guardar en favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <button id="btn-swap-stations" class="btn-icon-side" title="Invertir origen y destino">
+                                <i class="fa-solid fa-arrows-up-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Fila de Fecha, Hora y Botón Circular Ir -->
+                    <div class="datetime-submit-row">
+                        <div class="datetime-pill" id="pill-current-date" title="Seleccionar fecha de viaje">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span id="display-date">16/10/2026</span>
+                            <input type="date" id="input-date" class="hidden-datetime-input" aria-label="Fecha de viaje">
+                        </div>
+
+                        <div class="datetime-pill" id="pill-current-time" title="Seleccionar hora de viaje">
+                            <i class="fa-regular fa-clock"></i>
+                            <span id="display-time">20:31</span>
+                            <input type="time" id="input-time" class="hidden-datetime-input" aria-label="Hora de viaje">
+                        </div>
+
+                        <button id="btn-circle-ir" class="btn-circle-ir" title="Buscar servicios">
+                            Ir
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Mis Favoritos -->
+                <div class="home-card">
+                    <h3 class="section-title">Mis favoritos</h3>
+                    <div class="favorites-row" id="favorites-container">
+                        <!-- Poblado dinámicamente con favoritos guardados en localStorage -->
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Estado del Servicio AMBA -->
+                <div class="home-card">
+                    <h3 class="section-title">Estado del servicio AMBA</h3>
+                    <div class="lines-status-scroll">
+                        <div class="line-status-card" data-line="Roca">
+                            <div class="status-info-circle"><i class="fa-solid fa-info"></i></div>
+                            <div class="line-status-name">Roca</div>
+                            <div class="line-status-alert">Alertas por ramal</div>
+                        </div>
+                        <div class="line-status-card" data-line="Sarmiento">
+                            <div class="status-info-circle"><i class="fa-solid fa-info"></i></div>
+                            <div class="line-status-name">Sarmiento</div>
+                            <div class="line-status-alert">Alertas por ramal</div>
+                        </div>
+                        <div class="line-status-card" data-line="Mitre">
+                            <div class="status-info-circle"><i class="fa-solid fa-info"></i></div>
+                            <div class="line-status-name">Mitre</div>
+                            <div class="line-status-alert">Alertas por ramal</div>
+                        </div>
+                        <div class="line-status-card" data-line="San Martín">
+                            <div class="status-info-circle"><i class="fa-solid fa-info"></i></div>
+                            <div class="line-status-name">San Martín</div>
+                            <div class="line-status-alert">Servicio normal</div>
+                        </div>
+                        <div class="line-status-card" data-line="Belgrano Sur">
+                            <div class="status-info-circle"><i class="fa-solid fa-info"></i></div>
+                            <div class="line-status-name">Belgrano Sur</div>
+                            <div class="line-status-alert">Servicio normal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 PANTALLA 2: SELECTOR DE ESTACIÓN (IMG_2554)
+                 ============================================================== -->
+            <div id="screen-picker" class="app-screen screen-picker">
+                <div class="picker-top-bar">
+                    <button id="btn-picker-back" class="btn-picker-back" title="Volver al inicio">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="picker-search-container">
+                        <input type="text" id="picker-search-input" class="picker-search-input" placeholder="Buscar estación..." autocomplete="off">
+                        <i class="fa-solid fa-magnifying-glass picker-search-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Filtros de Línea -->
+                <div class="picker-filters-block">
+                    <div class="picker-filter-label">Línea</div>
+                    <div class="picker-chips-row">
+                        <button class="picker-chip active" data-line="all">Todas</button>
+                        <button class="picker-chip" data-line="Roca">Roca</button>
+                        <button class="picker-chip" data-line="Sarmiento">Sarmiento</button>
+                        <button class="picker-chip" data-line="Mitre">Mitre</button>
+                        <button class="picker-chip" data-line="San Martín">San Martín</button>
+                        <button class="picker-chip" data-line="Belgrano Sur">Belgrano Sur</button>
+                    </div>
+                </div>
+
+                <!-- Últimas Seleccionadas -->
+                <div class="picker-section-header">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Últimas seleccionadas</span>
+                </div>
+                <div class="picker-stations-list" id="picker-recents-list"></div>
+
+                <!-- Estaciones de la Red -->
+                <div class="picker-section-header">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Estaciones de la red</span>
+                </div>
+                <div class="picker-stations-list" id="picker-all-list"></div>
+            </div>
+
+            <!-- ==============================================================
+                 PANTALLA 3: RESULTADOS DE BÚSQUEDA (IMG_2559)
+                 ============================================================== -->
+            <div id="screen-results" class="app-screen">
+                <div class="results-header-banner">
+                    <button id="btn-results-back" class="btn-banner-back" title="Volver a la búsqueda">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                </div>
+
+                <!-- Resumen Superior Flotante del Viaje -->
+                <div class="results-summary-card" id="results-summary-card">
+                    <div class="search-inputs-wrapper" style="margin-bottom: 10px;">
+                        <div class="search-vertical-track-indicator" style="height: 65px;">
+                            <i class="fa-solid fa-location-dot indicator-pin"></i>
+                            <div class="indicator-dashed-line"></div>
+                            <div class="indicator-dot"></div>
+                        </div>
+                        <div class="search-fields-column" style="gap: 8px;">
+                            <div class="input-pill-container" style="height: 38px;">
+                                <span class="input-pill-text" id="summary-origin">Origen</span>
+                            </div>
+                            <div class="input-pill-container" style="height: 38px;">
+                                <span class="input-pill-text" id="summary-dest">Destino</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acordeones de Filtros -->
+                <div class="results-accordions-row">
+                    <div class="accordion-item">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                        <span>Ramal</span>
+                    </div>
+                    <div class="accordion-item">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                        <span>Tipo de servicio</span>
+                    </div>
+                </div>
+
+                <!-- Listado de Boletos y Servicios en Tiempo Real -->
+                <div class="results-services-list" id="results-services-container">
+                    <!-- Tarjetas de servicios generadas dinámicamente -->
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 PANTALLA 4: ITINERARIO Y TREN EN VIVO EN LA VÍA (IMG_2560 a 2562)
+                 ============================================================== -->
+            <div id="screen-itinerary" class="app-screen">
+                <div class="itinerary-top-bar">
+                    <button id="btn-itinerary-back" class="btn-banner-back" style="border-color: #64748b; color: #1e293b;" title="Volver a los resultados">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="itinerary-title-pill" id="itinerary-title-text">
+                        De Quilmes a Plaza C.
+                    </div>
+                    <a id="btn-itinerary-map" href="mapa.html" class="btn-map-shortcut" title="Ver en el Radar Satelital">
+                        <i class="fa-solid fa-map"></i>
+                    </a>
+                </div>
+
+                <!-- Trazado de Vía con Estaciones y Formación en Marcha -->
+                <div class="itinerary-track-container">
+                    <div class="itinerary-vertical-line"></div>
+                    <div id="itinerary-track-list" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                        <!-- Estaciones y tren en vivo renderizados en tiempo real -->
+                    </div>
+                </div>
+
+                <!-- Ficha Inferior Fija de Servicio (Aislada estrictamente dentro de itinerario) -->
+                <div class="itinerary-bottom-card-fixed" id="itinerary-bottom-card">
+                    <!-- Renderizado dinámicamente -->
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 PANTALLA 5: NOTIFICACIONES (AMBA ALERTAS)
+                 ============================================================== -->
+            <div id="screen-notifications" class="app-screen" style="padding: 16px;">
+                <h2 class="section-title" style="margin-bottom: 20px;">Novedades y Estado de Líneas</h2>
+                
+                <div class="home-card" style="margin: 8px 0; border-left: 5px solid #30a9e0;">
+                    <strong style="color: #0284c7; font-size: 1.05em;">Línea Roca</strong>
+                    <p style="font-size: 0.9em; color: #475569; margin-top: 4px;">Servicios funcionando con diagrama regular en ramales La Plata, Korn y Ezeiza.</p>
+                </div>
+
+                <div class="home-card" style="margin: 8px 0; border-left: 5px solid #00853f;">
+                    <strong style="color: #00853f; font-size: 1.05em;">Línea Sarmiento</strong>
+                    <p style="font-size: 0.9em; color: #475569; margin-top: 4px;">Servicio Once a Moreno normal con frecuencias habituales.</p>
+                </div>
+
+                <div class="home-card" style="margin: 8px 0; border-left: 5px solid #0072ce;">
+                    <strong style="color: #0072ce; font-size: 1.05em;">Línea Mitre</strong>
+                    <p style="font-size: 0.9em; color: #475569; margin-top: 4px;">Ramales Tigre, J. L. Suárez y Bmé. Mitre funcionando según cronograma.</p>
+                </div>
+
+                <div class="home-card" style="margin: 8px 0; border-left: 5px solid #00828a;">
+                    <strong style="color: #00828a; font-size: 1.05em;">Línea San Martín</strong>
+                    <p style="font-size: 0.9em; color: #475569; margin-top: 4px;">Servicio Retiro a Dr. Cabred en horario regular sin demoras.</p>
+                </div>
+
+                <div class="home-card" style="margin: 8px 0; border-left: 5px solid #d9381e;">
+                    <strong style="color: #d9381e; font-size: 1.05em;">Línea Belgrano Sur</strong>
+                    <p style="font-size: 0.9em; color: #475569; margin-top: 4px;">Ramal Sáenz a González Catán y Marinos con partidas normales.</p>
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 PANTALLA 6: MENÚ
+                 ============================================================== -->
+            <div id="screen-menu" class="app-screen screen-menu">
+                <div class="menu-list">
+                    <div class="menu-item" id="menu-item-favs">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Mis Favoritos</span>
+                    </div>
+                    <a href="tablero.html" class="menu-item">
+                        <i class="fa-solid fa-chalkboard"></i>
+                        <span>Tablero de Salidas</span>
+                    </a>
+                    <a href="mapa.html" class="menu-item">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                        <span>Radar Satelital GPS</span>
+                    </a>
+                    <a href="index.html" class="menu-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Portal OpenSOFSE</span>
+                    </a>
+                </div>
+
+                <!-- Pie Institucional con Logo OpenSOFSE -->
+                <div class="menu-footer">
+                    <img src="open_sofse.png" alt="OpenSOFSE" class="menu-opensofse-logo">
+                </div>
+            </div>
+
+        </main>
+
+        <!-- 3. Barra de Navegación Inferior Fija (Bottom Tab Bar - IMG_2553) -->
+        <nav class="app-bottom-nav" id="app-bottom-nav">
+            <div class="nav-tab-item active" id="tab-nav-home" title="Inicio">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="nav-tab-item" id="tab-nav-notifications" title="Novedades">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="nav-tab-item" id="tab-nav-menu" title="Menú">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Scripts: Base de datos de estaciones + Lógica de la Webapp -->
+    <script src="stations_data.js"></script>
+    <script src="webapp.js"></script>
+</body>
+</html>

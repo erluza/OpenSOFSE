@@ -1,0 +1,6698 @@
+{
+  "Roca": [
+    {
+      "nombre": "Constitución",
+      "id_estacion": "93",
+      "id_tramo": "17",
+      "orden": "1",
+      "id_referencia": "10462",
+      "latitud": "-34.6303512",
+      "longitud": "-58.3805802",
+      "referencia_orden": "10",
+      "radio": "",
+      "andenes_habilitados": "14",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        55,
+        11,
+        13,
+        17,
+        605,
+        601,
+        609,
+        49,
+        103,
+        43,
+        57,
+        19,
+        15,
+        603,
+        181,
+        101,
+        105
+      ],
+      "operativa_en_ramales": [
+        11,
+        13,
+        17,
+        605,
+        601,
+        609,
+        103,
+        43,
+        19,
+        15,
+        603,
+        181,
+        101
+      ]
+    },
+    {
+      "nombre": "Hipólito Yrigoyen",
+      "id_estacion": "172",
+      "id_tramo": "17",
+      "orden": "2",
+      "id_referencia": "10592",
+      "latitud": "-34.6536422",
+      "longitud": "-58.3788878",
+      "referencia_orden": "140",
+      "radio": "",
+      "andenes_habilitados": "0",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        17,
+        603,
+        49,
+        181,
+        601,
+        605,
+        609,
+        101,
+        103,
+        13,
+        43,
+        55,
+        57,
+        19,
+        15,
+        11,
+        105
+      ],
+      "operativa_en_ramales": [
+        17,
+        603,
+        601,
+        605,
+        609,
+        101,
+        103,
+        43,
+        19,
+        15
+      ]
+    },
+    {
+      "nombre": "Santillán y Kosteki",
+      "id_estacion": "368",
+      "id_tramo": "17",
+      "orden": "3",
+      "id_referencia": "10640",
+      "latitud": "-34.6620947",
+      "longitud": "-58.3766492",
+      "referencia_orden": "188",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        11,
+        13,
+        601,
+        605,
+        609,
+        603,
+        101,
+        57,
+        43,
+        49,
+        103,
+        17,
+        19,
+        15,
+        105,
+        55
+      ],
+      "operativa_en_ramales": [
+        181,
+        11,
+        13,
+        601,
+        605,
+        609,
+        603,
+        101,
+        43,
+        103,
+        17,
+        19,
+        15
+      ]
+    },
+    {
+      "nombre": "Gerli",
+      "id_estacion": "151",
+      "id_tramo": "18",
+      "orden": "1",
+      "id_referencia": "27072",
+      "latitud": "-34.6857287",
+      "longitud": "-58.3826371",
+      "referencia_orden": "324",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        601,
+        609,
+        19,
+        49,
+        57,
+        103,
+        43,
+        15,
+        181,
+        603,
+        17,
+        101,
+        105,
+        55,
+        605,
+        27
+      ],
+      "operativa_en_ramales": [
+        601,
+        609,
+        19,
+        103,
+        43,
+        15,
+        603,
+        17,
+        101,
+        605
+      ]
+    },
+    {
+      "nombre": "Lanús",
+      "id_estacion": "215",
+      "id_tramo": "18",
+      "orden": "2",
+      "id_referencia": "27198",
+      "latitud": "-34.7074543",
+      "longitud": "-58.3906370",
+      "referencia_orden": "450",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        181,
+        105,
+        601,
+        19,
+        17,
+        43,
+        49,
+        103,
+        55,
+        57,
+        609,
+        15,
+        603,
+        605,
+        101,
+        37,
+        27
+      ],
+      "operativa_en_ramales": [
+        601,
+        19,
+        17,
+        43,
+        103,
+        609,
+        15,
+        603,
+        605,
+        101
+      ]
+    },
+    {
+      "nombre": "Remedios de Escalada",
+      "id_estacion": "329",
+      "id_tramo": "18",
+      "orden": "3",
+      "id_referencia": "27307",
+      "latitud": "-34.7269127",
+      "longitud": "-58.3936412",
+      "referencia_orden": "559",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        37,
+        105,
+        101,
+        181,
+        601,
+        17,
+        43,
+        49,
+        57,
+        103,
+        19,
+        55,
+        609,
+        15,
+        605,
+        603,
+        29
+      ],
+      "operativa_en_ramales": [
+        27,
+        37,
+        101,
+        181,
+        601,
+        17,
+        43,
+        57,
+        103,
+        19,
+        609,
+        15,
+        605,
+        603,
+        29
+      ]
+    },
+    {
+      "nombre": "Banfield",
+      "id_estacion": "30",
+      "id_tramo": "18",
+      "orden": "4",
+      "id_referencia": "27402",
+      "latitud": "-34.7439703",
+      "longitud": "-58.3954618",
+      "referencia_orden": "654",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        43,
+        103,
+        19,
+        29,
+        105,
+        601,
+        609,
+        101,
+        49,
+        17,
+        57,
+        15,
+        27,
+        55,
+        605,
+        37,
+        603
+      ],
+      "operativa_en_ramales": [
+        43,
+        103,
+        19,
+        601,
+        609,
+        101,
+        17,
+        15,
+        605,
+        603
+      ]
+    },
+    {
+      "nombre": "Lomas de Zamora",
+      "id_estacion": "238",
+      "id_tramo": "18",
+      "orden": "5",
+      "id_referencia": "27498",
+      "latitud": "-34.7612113",
+      "longitud": "-58.3973326",
+      "referencia_orden": "750",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        37,
+        181,
+        105,
+        601,
+        101,
+        43,
+        49,
+        103,
+        55,
+        57,
+        19,
+        609,
+        17,
+        15,
+        605,
+        603,
+        27
+      ],
+      "operativa_en_ramales": [
+        601,
+        101,
+        43,
+        103,
+        19,
+        609,
+        17,
+        15,
+        605,
+        603
+      ]
+    },
+    {
+      "nombre": "Temperley",
+      "id_estacion": "386",
+      "id_tramo": "18",
+      "orden": "6",
+      "id_referencia": "27581",
+      "latitud": "-34.7761044",
+      "longitud": "-58.3963380",
+      "referencia_orden": "833",
+      "radio": "",
+      "andenes_habilitados": "10",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        55,
+        105,
+        603,
+        101,
+        29,
+        37,
+        27,
+        181,
+        43,
+        601,
+        49,
+        103,
+        57,
+        609,
+        605,
+        17,
+        15,
+        19
+      ],
+      "operativa_en_ramales": [
+        603,
+        101,
+        29,
+        37,
+        27,
+        181,
+        43,
+        601,
+        49,
+        103,
+        57,
+        609,
+        605,
+        17,
+        15,
+        19
+      ]
+    },
+    {
+      "nombre": "Adrogué",
+      "id_estacion": "8",
+      "id_tramo": "31",
+      "orden": "1",
+      "id_referencia": "87498",
+      "latitud": "-34.7978483",
+      "longitud": "-58.3942737",
+      "referencia_orden": "954",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        105,
+        17,
+        57,
+        605,
+        103,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        17,
+        57,
+        605,
+        103,
+        101
+      ]
+    },
+    {
+      "nombre": "Burzaco",
+      "id_estacion": "49",
+      "id_tramo": "31",
+      "orden": "2",
+      "id_referencia": "87650",
+      "latitud": "-34.8251482",
+      "longitud": "-58.3913722",
+      "referencia_orden": "1106",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        105,
+        103,
+        605,
+        17,
+        57,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        103,
+        605,
+        17,
+        57,
+        101
+      ]
+    },
+    {
+      "nombre": "Longchamps",
+      "id_estacion": "239",
+      "id_tramo": "31",
+      "orden": "3",
+      "id_referencia": "87842",
+      "latitud": "-34.8595879",
+      "longitud": "-58.3871987",
+      "referencia_orden": "1298",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        105,
+        103,
+        605,
+        17,
+        57,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        103,
+        605,
+        17,
+        57,
+        101
+      ]
+    },
+    {
+      "nombre": "Glew",
+      "id_estacion": "152",
+      "id_tramo": "31",
+      "orden": "4",
+      "id_referencia": "88004",
+      "latitud": "-34.8886501",
+      "longitud": "-58.3837029",
+      "referencia_orden": "1460",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        605,
+        103,
+        17,
+        57,
+        105,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        605,
+        103,
+        17,
+        57,
+        101
+      ]
+    },
+    {
+      "nombre": "Guernica",
+      "id_estacion": "165",
+      "id_tramo": "31",
+      "orden": "5",
+      "id_referencia": "88167",
+      "latitud": "-34.9179155",
+      "longitud": "-58.3805605",
+      "referencia_orden": "1623",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        605,
+        17,
+        103,
+        57,
+        105,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        605,
+        17,
+        103,
+        57,
+        101
+      ]
+    },
+    {
+      "nombre": "Alejandro Korn",
+      "id_estacion": "13",
+      "id_tramo": "31",
+      "orden": "6",
+      "id_referencia": "88518",
+      "latitud": "-34.9807690",
+      "longitud": "-58.3737744",
+      "referencia_orden": "1974",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        103,
+        605,
+        17,
+        57,
+        101,
+        105,
+        76
+      ],
+      "operativa_en_ramales": [
+        103,
+        605,
+        17,
+        57,
+        101
+      ]
+    },
+    {
+      "nombre": "Sarandí",
+      "id_estacion": "370",
+      "id_tramo": "21",
+      "orden": "2",
+      "id_referencia": "10831",
+      "latitud": "-34.6787475",
+      "longitud": "-58.3449626",
+      "referencia_orden": "381",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        13
+      ],
+      "operativa_en_ramales": [
+        11,
+        13
+      ]
+    },
+    {
+      "nombre": "Villa Domínico",
+      "id_estacion": "418",
+      "id_tramo": "21",
+      "orden": "3",
+      "id_referencia": "10947",
+      "latitud": "-34.6915355",
+      "longitud": "-58.3253499",
+      "referencia_orden": "497",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        13
+      ],
+      "operativa_en_ramales": [
+        11,
+        13
+      ]
+    },
+    {
+      "nombre": "Wilde",
+      "id_estacion": "430",
+      "id_tramo": "21",
+      "orden": "4",
+      "id_referencia": "11021",
+      "latitud": "-34.6975894",
+      "longitud": "-58.3111938",
+      "referencia_orden": "571",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        13,
+        11
+      ],
+      "operativa_en_ramales": [
+        13,
+        11
+      ]
+    },
+    {
+      "nombre": "Don Bosco",
+      "id_estacion": "115",
+      "id_tramo": "21",
+      "orden": "5",
+      "id_referencia": "11097",
+      "latitud": "-34.7033242",
+      "longitud": "-58.2961718",
+      "referencia_orden": "647",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        13,
+        11
+      ],
+      "operativa_en_ramales": [
+        13,
+        11
+      ]
+    },
+    {
+      "nombre": "Bernal",
+      "id_estacion": "39",
+      "id_tramo": "21",
+      "orden": "6",
+      "id_referencia": "11177",
+      "latitud": "-34.7093395",
+      "longitud": "-58.2803725",
+      "referencia_orden": "727",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        13
+      ],
+      "operativa_en_ramales": [
+        11,
+        13
+      ]
+    },
+    {
+      "nombre": "Quilmes",
+      "id_estacion": "322",
+      "id_tramo": "21",
+      "orden": "7",
+      "id_referencia": "11303",
+      "latitud": "-34.7243402",
+      "longitud": "-58.2608888",
+      "referencia_orden": "853",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        13,
+        11
+      ],
+      "operativa_en_ramales": [
+        13,
+        11
+      ]
+    },
+    {
+      "nombre": "Ezpeleta",
+      "id_estacion": "133",
+      "id_tramo": "21",
+      "orden": "8",
+      "id_referencia": "11500",
+      "latitud": "-34.7518509",
+      "longitud": "-58.2341863",
+      "referencia_orden": "1050",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        13
+      ],
+      "operativa_en_ramales": [
+        11,
+        13
+      ]
+    },
+    {
+      "nombre": "Berazategui",
+      "id_estacion": "38",
+      "id_tramo": "21",
+      "orden": "9",
+      "id_referencia": "11634",
+      "latitud": "-34.7639154",
+      "longitud": "-58.2088198",
+      "referencia_orden": "1184",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        13
+      ],
+      "operativa_en_ramales": [
+        11,
+        13
+      ]
+    },
+    {
+      "nombre": "Villa España",
+      "id_estacion": "420",
+      "id_tramo": "23",
+      "orden": "1",
+      "id_referencia": "16997",
+      "latitud": "-34.7744501",
+      "longitud": "-58.1949303",
+      "referencia_orden": "1278",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        13
+      ],
+      "operativa_en_ramales": [
+        13
+      ]
+    },
+    {
+      "nombre": "Ranelagh",
+      "id_estacion": "328",
+      "id_tramo": "23",
+      "orden": "2",
+      "id_referencia": "17088",
+      "latitud": "-34.7893721",
+      "longitud": "-58.2031929",
+      "referencia_orden": "1369",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        13
+      ],
+      "operativa_en_ramales": [
+        13
+      ]
+    },
+    {
+      "nombre": "Sourigues",
+      "id_estacion": "380",
+      "id_tramo": "23",
+      "orden": "3",
+      "id_referencia": "17197",
+      "latitud": "-34.8072374",
+      "longitud": "-58.2131028",
+      "referencia_orden": "1478",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        13
+      ],
+      "operativa_en_ramales": [
+        13
+      ]
+    },
+    {
+      "nombre": "Bosques",
+      "id_estacion": "43",
+      "id_tramo": "29",
+      "orden": "7",
+      "id_referencia": "20614",
+      "latitud": "-34.8195018",
+      "longitud": "-58.2303679",
+      "referencia_orden": "1671",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        607,
+        13,
+        15,
+        29,
+        603
+      ],
+      "operativa_en_ramales": [
+        607,
+        13,
+        15,
+        29,
+        603
+      ]
+    },
+    {
+      "nombre": "José Mármol",
+      "id_estacion": "197",
+      "id_tramo": "29",
+      "orden": "1",
+      "id_referencia": "19901",
+      "latitud": "-34.7919121",
+      "longitud": "-58.3811522",
+      "referencia_orden": "958",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        15,
+        607,
+        29,
+        603
+      ],
+      "operativa_en_ramales": [
+        15,
+        607,
+        29,
+        603
+      ]
+    },
+    {
+      "nombre": "Rafael Calzada",
+      "id_estacion": "324",
+      "id_tramo": "29",
+      "orden": "2",
+      "id_referencia": "20005",
+      "latitud": "-34.7966735",
+      "longitud": "-58.3591724",
+      "referencia_orden": "1062",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        607,
+        15,
+        29,
+        603
+      ],
+      "operativa_en_ramales": [
+        607,
+        15,
+        29,
+        603
+      ]
+    },
+    {
+      "nombre": "Claypole",
+      "id_estacion": "85",
+      "id_tramo": "29",
+      "orden": "3",
+      "id_referencia": "20104",
+      "latitud": "-34.8011800",
+      "longitud": "-58.3382367",
+      "referencia_orden": "1161",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        607,
+        15,
+        603
+      ],
+      "operativa_en_ramales": [
+        29,
+        607,
+        15,
+        603
+      ]
+    },
+    {
+      "nombre": "Dante Ardigó",
+      "id_estacion": "102",
+      "id_tramo": "29",
+      "orden": "4",
+      "id_referencia": "20273",
+      "latitud": "-34.8088901",
+      "longitud": "-58.3025039",
+      "referencia_orden": "1330",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        607,
+        15,
+        603
+      ],
+      "operativa_en_ramales": [
+        29,
+        607,
+        15,
+        603
+      ]
+    },
+    {
+      "nombre": "Florencio Varela",
+      "id_estacion": "138",
+      "id_tramo": "29",
+      "orden": "5",
+      "id_referencia": "20404",
+      "latitud": "-34.8111227",
+      "longitud": "-58.2742679",
+      "referencia_orden": "1461",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        607,
+        15,
+        603
+      ],
+      "operativa_en_ramales": [
+        29,
+        607,
+        15,
+        603
+      ]
+    },
+    {
+      "nombre": "Zeballos",
+      "id_estacion": "435",
+      "id_tramo": "29",
+      "orden": "6",
+      "id_referencia": "20485",
+      "latitud": "-34.8110162",
+      "longitud": "-58.2566214",
+      "referencia_orden": "1542",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        15,
+        29,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        15,
+        29,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Turdera",
+      "id_estacion": "399",
+      "id_tramo": "27",
+      "orden": "1",
+      "id_referencia": "27729",
+      "latitud": "-34.7950754",
+      "longitud": "-58.4080951",
+      "referencia_orden": "977",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        19,
+        601,
+        37,
+        49,
+        43,
+        55
+      ],
+      "operativa_en_ramales": [
+        19,
+        601,
+        37,
+        49,
+        43
+      ]
+    },
+    {
+      "nombre": "Llavallol",
+      "id_estacion": "235",
+      "id_tramo": "27",
+      "orden": "2",
+      "id_referencia": "27830",
+      "latitud": "-34.7971317",
+      "longitud": "-58.4300258",
+      "referencia_orden": "1078",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        19,
+        601,
+        49,
+        43,
+        37,
+        55
+      ],
+      "operativa_en_ramales": [
+        181,
+        19,
+        601,
+        49,
+        43,
+        37
+      ]
+    },
+    {
+      "nombre": "Luis Guillón",
+      "id_estacion": "246",
+      "id_tramo": "27",
+      "orden": "3",
+      "id_referencia": "27923",
+      "latitud": "-34.8032178",
+      "longitud": "-58.4485504",
+      "referencia_orden": "1171",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        181,
+        19,
+        601,
+        49,
+        43,
+        55
+      ],
+      "operativa_en_ramales": [
+        37,
+        19,
+        601,
+        43
+      ]
+    },
+    {
+      "nombre": "Monte Grande",
+      "id_estacion": "277",
+      "id_tramo": "27",
+      "orden": "4",
+      "id_referencia": "28038",
+      "latitud": "-34.8144339",
+      "longitud": "-58.4696989",
+      "referencia_orden": "1286",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        181,
+        601,
+        19,
+        49,
+        43,
+        55
+      ],
+      "operativa_en_ramales": [
+        37,
+        601,
+        19,
+        49,
+        43
+      ]
+    },
+    {
+      "nombre": "El Jagüel",
+      "id_estacion": "125",
+      "id_tramo": "27",
+      "orden": "5",
+      "id_referencia": "28198",
+      "latitud": "-34.8332274",
+      "longitud": "-58.4961652",
+      "referencia_orden": "1446",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        601,
+        19,
+        49,
+        43,
+        181,
+        55
+      ],
+      "operativa_en_ramales": [
+        37,
+        601,
+        19,
+        43
+      ]
+    },
+    {
+      "nombre": "Ezeiza",
+      "id_estacion": "132",
+      "id_tramo": "27",
+      "orden": "6",
+      "id_referencia": "28366",
+      "latitud": "-34.8540842",
+      "longitud": "-58.5228154",
+      "referencia_orden": "1614",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        601,
+        19,
+        49,
+        43,
+        181,
+        55
+      ],
+      "operativa_en_ramales": [
+        37,
+        601,
+        19,
+        49,
+        43,
+        181
+      ]
+    },
+    {
+      "nombre": "Plátanos",
+      "id_estacion": "309",
+      "id_tramo": "22",
+      "orden": "1",
+      "id_referencia": "11836",
+      "latitud": "-34.7823359",
+      "longitud": "-58.1707596",
+      "referencia_orden": "1386",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11
+      ],
+      "operativa_en_ramales": [
+        11
+      ]
+    },
+    {
+      "nombre": "Hudson",
+      "id_estacion": "176",
+      "id_tramo": "22",
+      "orden": "2",
+      "id_referencia": "11920",
+      "latitud": "-34.7909139",
+      "longitud": "-58.1556292",
+      "referencia_orden": "1470",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11
+      ],
+      "operativa_en_ramales": [
+        11
+      ]
+    },
+    {
+      "nombre": "Pereyra",
+      "id_estacion": "303",
+      "id_tramo": "22",
+      "orden": "3",
+      "id_referencia": "12298",
+      "latitud": "-34.8366304",
+      "longitud": "-58.0945403",
+      "referencia_orden": "1848",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11
+      ],
+      "operativa_en_ramales": [
+        11
+      ]
+    },
+    {
+      "nombre": "Villa Elisa",
+      "id_estacion": "419",
+      "id_tramo": "30",
+      "orden": "1",
+      "id_referencia": "12415",
+      "latitud": "-34.8497716",
+      "longitud": "-58.0748099",
+      "referencia_orden": "1965",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        11,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "City Bell",
+      "id_estacion": "83",
+      "id_tramo": "30",
+      "orden": "2",
+      "id_referencia": "12589",
+      "latitud": "-34.8657239",
+      "longitud": "-58.0420495",
+      "referencia_orden": "2139",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        11,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Gonnet",
+      "id_estacion": "153",
+      "id_tramo": "30",
+      "orden": "3",
+      "id_referencia": "12752",
+      "latitud": "-34.8798410",
+      "longitud": "-58.0107856",
+      "referencia_orden": "2302",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        607,
+        11,
+        603
+      ],
+      "operativa_en_ramales": [
+        607,
+        11,
+        603
+      ]
+    },
+    {
+      "nombre": "Ringuelet",
+      "id_estacion": "334",
+      "id_tramo": "30",
+      "orden": "4",
+      "id_referencia": "12823",
+      "latitud": "-34.8813876",
+      "longitud": "-57.9960622",
+      "referencia_orden": "2373",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        11,
+        603,
+        607
+      ],
+      "operativa_en_ramales": [
+        11,
+        603,
+        607
+      ]
+    },
+    {
+      "nombre": "Tolosa",
+      "id_estacion": "392",
+      "id_tramo": "30",
+      "orden": "5",
+      "id_referencia": "12975",
+      "latitud": "-34.8909547",
+      "longitud": "-57.9680983",
+      "referencia_orden": "2525",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        603,
+        11,
+        607
+      ],
+      "operativa_en_ramales": [
+        603,
+        11,
+        607
+      ]
+    },
+    {
+      "nombre": "La Plata",
+      "id_estacion": "217",
+      "id_tramo": "30",
+      "orden": "6",
+      "id_referencia": "13079",
+      "latitud": "-34.9032966",
+      "longitud": "-57.9509918",
+      "referencia_orden": "2629",
+      "radio": "",
+      "andenes_habilitados": "7",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        603,
+        39,
+        607,
+        11
+      ],
+      "operativa_en_ramales": [
+        603,
+        39,
+        607,
+        11
+      ]
+    },
+    {
+      "nombre": "Domselaar",
+      "id_estacion": "117",
+      "id_tramo": "31",
+      "orden": "7",
+      "id_referencia": "89156",
+      "latitud": "-35.0701752",
+      "longitud": "-58.2906247",
+      "referencia_orden": "2616",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        105,
+        57,
+        103,
+        605,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        57,
+        103,
+        605,
+        101
+      ]
+    },
+    {
+      "nombre": "Cnel Brandsen",
+      "id_estacion": "86",
+      "id_tramo": "31",
+      "orden": "8",
+      "id_referencia": "89764",
+      "latitud": "-35.1680647",
+      "longitud": "-58.2318305",
+      "referencia_orden": "3221",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        57,
+        103,
+        105,
+        605,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        57,
+        103,
+        605,
+        101
+      ]
+    },
+    {
+      "nombre": "Jeppener",
+      "id_estacion": "189",
+      "id_tramo": "31",
+      "orden": "9",
+      "id_referencia": "90413",
+      "latitud": "-35.2776676",
+      "longitud": "-58.1982603",
+      "referencia_orden": "3870",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        57,
+        103,
+        101,
+        605,
+        105,
+        76
+      ],
+      "operativa_en_ramales": [
+        57,
+        103,
+        101,
+        605
+      ]
+    },
+    {
+      "nombre": "Altamirano",
+      "id_estacion": "17",
+      "id_tramo": "31",
+      "orden": "10",
+      "id_referencia": "90926",
+      "latitud": "-35.3611696",
+      "longitud": "-58.1512081",
+      "referencia_orden": "4381",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        57,
+        103,
+        105,
+        605,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        57,
+        103,
+        605,
+        101
+      ]
+    },
+    {
+      "nombre": "Gándara",
+      "id_estacion": "146",
+      "id_tramo": "31",
+      "orden": "11",
+      "id_referencia": "91482",
+      "latitud": "-35.4494698",
+      "longitud": "-58.0939374",
+      "referencia_orden": "4934",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        76,
+        57,
+        103,
+        605,
+        101,
+        105
+      ],
+      "operativa_en_ramales": [
+        57,
+        103,
+        605,
+        101
+      ]
+    },
+    {
+      "nombre": "Chascomús",
+      "id_estacion": "78",
+      "id_tramo": "31",
+      "orden": "12",
+      "id_referencia": "92393",
+      "latitud": "-35.5790842",
+      "longitud": "-57.9823866",
+      "referencia_orden": "5844",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        57,
+        103,
+        105,
+        605,
+        101,
+        76
+      ],
+      "operativa_en_ramales": [
+        57,
+        103,
+        605,
+        101
+      ]
+    },
+    {
+      "nombre": "Cañuelas",
+      "id_estacion": "60",
+      "id_tramo": "27",
+      "orden": "17",
+      "id_referencia": "62483",
+      "latitud": "-35.0593556",
+      "longitud": "-58.7543291",
+      "referencia_orden": "3200",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        601,
+        43,
+        55,
+        49,
+        37,
+        181
+      ],
+      "operativa_en_ramales": [
+        601,
+        43,
+        55,
+        49,
+        37,
+        181
+      ]
+    },
+    {
+      "nombre": "Uribelarrea",
+      "id_estacion": "402",
+      "id_tramo": "50",
+      "orden": "1",
+      "id_referencia": "686285",
+      "latitud": "-35.1154841",
+      "longitud": "-58.8984676",
+      "referencia_orden": "3942",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        55,
+        601
+      ],
+      "operativa_en_ramales": [
+        55,
+        601
+      ]
+    },
+    {
+      "nombre": "Empalme Lobos",
+      "id_estacion": "129",
+      "id_tramo": "51",
+      "orden": "1",
+      "id_referencia": "687235",
+      "latitud": "-35.1515057",
+      "longitud": "-59.0908028",
+      "referencia_orden": "4892",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        55,
+        601,
+        53
+      ],
+      "operativa_en_ramales": [
+        55,
+        601,
+        53
+      ]
+    },
+    {
+      "nombre": "Lobos",
+      "id_estacion": "237",
+      "id_tramo": "51",
+      "orden": "2",
+      "id_referencia": "687424",
+      "latitud": "-35.1848403",
+      "longitud": "-59.0927904",
+      "referencia_orden": "5081",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        601,
+        55,
+        53
+      ],
+      "operativa_en_ramales": [
+        601,
+        55,
+        53
+      ]
+    },
+    {
+      "nombre": "Tristán Suárez",
+      "id_estacion": "396",
+      "id_tramo": "27",
+      "orden": "9",
+      "id_referencia": "61191",
+      "latitud": "-34.8905761",
+      "longitud": "-58.5694728",
+      "referencia_orden": "1908",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        55,
+        181,
+        601,
+        43,
+        49
+      ],
+      "operativa_en_ramales": [
+        37,
+        181,
+        601,
+        43,
+        49
+      ]
+    },
+    {
+      "nombre": "Vicente Casares",
+      "id_estacion": "407",
+      "id_tramo": "27",
+      "orden": "12",
+      "id_referencia": "61730",
+      "latitud": "-34.9622855",
+      "longitud": "-58.6480259",
+      "referencia_orden": "2447",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        37,
+        55,
+        601,
+        43,
+        49
+      ],
+      "operativa_en_ramales": [
+        181,
+        37,
+        601,
+        43,
+        49
+      ]
+    },
+    {
+      "nombre": "Ricardo Levene",
+      "id_estacion": "333",
+      "id_tramo": "27",
+      "orden": "15",
+      "id_referencia": "62218",
+      "latitud": "-35.0217509",
+      "longitud": "-58.7239218",
+      "referencia_orden": "2935",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        49,
+        37,
+        55,
+        181,
+        601,
+        43
+      ],
+      "operativa_en_ramales": [
+        49,
+        37,
+        181,
+        601,
+        43
+      ]
+    },
+    {
+      "nombre": "Hospital Cuenca Alta",
+      "id_estacion": "8653",
+      "id_tramo": "27",
+      "orden": "16",
+      "id_referencia": "62253",
+      "latitud": "-35.0264121",
+      "longitud": "-58.7290951",
+      "referencia_orden": "2970",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        49,
+        37,
+        55
+      ],
+      "operativa_en_ramales": [
+        49,
+        37
+      ]
+    },
+    {
+      "nombre": "La Noria",
+      "id_estacion": "214",
+      "id_tramo": "33",
+      "orden": "1",
+      "id_referencia": "451943",
+      "latitud": "-35.1651382",
+      "longitud": "-58.7881853",
+      "referencia_orden": "3827",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        49
+      ],
+      "operativa_en_ramales": [
+        181,
+        49
+      ]
+    },
+    {
+      "nombre": "Abbott",
+      "id_estacion": "3",
+      "id_tramo": "33",
+      "orden": "2",
+      "id_referencia": "452594",
+      "latitud": "-35.2814201",
+      "longitud": "-58.8029392",
+      "referencia_orden": "4478",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        49,
+        181
+      ],
+      "operativa_en_ramales": [
+        49,
+        181
+      ]
+    },
+    {
+      "nombre": "KM 105",
+      "id_estacion": "490",
+      "id_tramo": "33",
+      "orden": "3",
+      "id_referencia": "453186",
+      "latitud": "-35.3870187",
+      "longitud": "-58.8187890",
+      "referencia_orden": "5070",
+      "radio": "",
+      "andenes_habilitados": "0",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        49,
+        181
+      ],
+      "operativa_en_ramales": [
+        49,
+        181
+      ]
+    },
+    {
+      "nombre": "Monte",
+      "id_estacion": "276",
+      "id_tramo": "33",
+      "orden": "4",
+      "id_referencia": "453465",
+      "latitud": "-35.4368315",
+      "longitud": "-58.8176431",
+      "referencia_orden": "5349",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        49,
+        181
+      ],
+      "operativa_en_ramales": [
+        49,
+        181
+      ]
+    },
+    {
+      "nombre": "Hospital Ezeiza",
+      "id_estacion": "18272",
+      "id_tramo": "27",
+      "orden": "7",
+      "id_referencia": "60981",
+      "latitud": "-34.8645504",
+      "longitud": "-58.5361065",
+      "referencia_orden": "1698",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        49,
+        55
+      ],
+      "operativa_en_ramales": [
+        37
+      ]
+    },
+    {
+      "nombre": "Unión Ferroviaria",
+      "id_estacion": "400",
+      "id_tramo": "27",
+      "orden": "8",
+      "id_referencia": "61027",
+      "latitud": "-34.8702432",
+      "longitud": "-58.5434227",
+      "referencia_orden": "1744",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        37,
+        43,
+        49,
+        601,
+        55
+      ],
+      "operativa_en_ramales": [
+        37,
+        43,
+        601
+      ]
+    },
+    {
+      "nombre": "Carlos Spegazzini",
+      "id_estacion": "64",
+      "id_tramo": "27",
+      "orden": "10",
+      "id_referencia": "61348",
+      "latitud": "-34.9100305",
+      "longitud": "-58.5944238",
+      "referencia_orden": "2065",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        601,
+        43,
+        49,
+        181,
+        55
+      ],
+      "operativa_en_ramales": [
+        37,
+        601,
+        43
+      ]
+    },
+    {
+      "nombre": "Máximo Paz",
+      "id_estacion": "265",
+      "id_tramo": "27",
+      "orden": "11",
+      "id_referencia": "61537",
+      "latitud": "-34.9362878",
+      "longitud": "-58.6205451",
+      "referencia_orden": "2254",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        37,
+        181,
+        601,
+        43,
+        55,
+        49
+      ],
+      "operativa_en_ramales": [
+        37,
+        601,
+        43
+      ]
+    },
+    {
+      "nombre": "Alejandro Petión",
+      "id_estacion": "14",
+      "id_tramo": "27",
+      "orden": "13",
+      "id_referencia": "61877",
+      "latitud": "-34.9775385",
+      "longitud": "-58.6743571",
+      "referencia_orden": "2594",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        181,
+        601,
+        43,
+        55,
+        49,
+        37
+      ],
+      "operativa_en_ramales": [
+        601,
+        43,
+        37
+      ]
+    },
+    {
+      "nombre": "Apeadero Kloosterman",
+      "id_estacion": "21",
+      "id_tramo": "27",
+      "orden": "14",
+      "id_referencia": "61963",
+      "latitud": "-34.9864590",
+      "longitud": "-58.6897619",
+      "referencia_orden": "2680",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        49,
+        181,
+        601,
+        43,
+        55,
+        37
+      ],
+      "operativa_en_ramales": [
+        601,
+        43,
+        37
+      ]
+    },
+    {
+      "nombre": "Arquitectura",
+      "id_estacion": "25",
+      "id_tramo": "30",
+      "orden": "7",
+      "id_referencia": "604401",
+      "latitud": "-34.9050119",
+      "longitud": "-57.9433437",
+      "referencia_orden": "2668",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Informática",
+      "id_estacion": "179",
+      "id_tramo": "30",
+      "orden": "8",
+      "id_referencia": "604427",
+      "latitud": "-34.9032506",
+      "longitud": "-57.9380775",
+      "referencia_orden": "2694",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Medicina",
+      "id_estacion": "267",
+      "id_tramo": "30",
+      "orden": "9",
+      "id_referencia": "604486",
+      "latitud": "-34.9090514",
+      "longitud": "-57.9278447",
+      "referencia_orden": "2753",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Periodismo",
+      "id_estacion": "304",
+      "id_tramo": "30",
+      "orden": "10",
+      "id_referencia": "604510",
+      "latitud": "-34.9122051",
+      "longitud": "-57.9242646",
+      "referencia_orden": "2777",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Diagonal 73",
+      "id_estacion": "113",
+      "id_tramo": "30",
+      "orden": "11",
+      "id_referencia": "604561",
+      "latitud": "-34.9201456",
+      "longitud": "-57.9190388",
+      "referencia_orden": "2828",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Policlínico",
+      "id_estacion": "311",
+      "id_tramo": "30",
+      "orden": "12",
+      "id_referencia": "604592",
+      "latitud": "-34.9253053",
+      "longitud": "-57.9213044",
+      "referencia_orden": "2859",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Avenida 7",
+      "id_estacion": "5976",
+      "id_tramo": "30",
+      "orden": "13",
+      "id_referencia": "604640",
+      "latitud": "-34.9317367",
+      "longitud": "-57.9283343",
+      "referencia_orden": "2907",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Circunvalación",
+      "id_estacion": "5977",
+      "id_tramo": "30",
+      "orden": "14",
+      "id_referencia": "604679",
+      "latitud": "-34.9369548",
+      "longitud": "-57.9340570",
+      "referencia_orden": "2946",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Meridiano V",
+      "id_estacion": "5978",
+      "id_tramo": "30",
+      "orden": "15",
+      "id_referencia": "604705",
+      "latitud": "-34.9404335",
+      "longitud": "-57.9378722",
+      "referencia_orden": "2972",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Hospital San Juan de Dios",
+      "id_estacion": "5979",
+      "id_tramo": "30",
+      "orden": "16",
+      "id_referencia": "604755",
+      "latitud": "-34.9471234",
+      "longitud": "-57.9452089",
+      "referencia_orden": "3022",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        39,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        39,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Santa Sofía",
+      "id_estacion": "367",
+      "id_tramo": "24",
+      "orden": "1",
+      "id_referencia": "689034",
+      "latitud": "-34.8250759",
+      "longitud": "-58.2132521",
+      "referencia_orden": "1754",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        29,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "J. M. Gutiérrez",
+      "id_estacion": "168",
+      "id_tramo": "24",
+      "orden": "2",
+      "id_referencia": "689168",
+      "latitud": "-34.8340285",
+      "longitud": "-58.1856356",
+      "referencia_orden": "1888",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        29,
+        607,
+        603
+      ],
+      "operativa_en_ramales": [
+        29,
+        607,
+        603
+      ]
+    },
+    {
+      "nombre": "Hospital Español",
+      "id_estacion": "174",
+      "id_tramo": "28",
+      "orden": "1",
+      "id_referencia": "38213",
+      "latitud": "-34.7862792",
+      "longitud": "-58.4072878",
+      "referencia_orden": "929",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        609,
+        607
+      ],
+      "operativa_en_ramales": [
+        27,
+        609,
+        607
+      ]
+    },
+    {
+      "nombre": "Santa Catalina",
+      "id_estacion": "365",
+      "id_tramo": "28",
+      "orden": "2",
+      "id_referencia": "38361",
+      "latitud": "-34.7804203",
+      "longitud": "-58.4373374",
+      "referencia_orden": "1077",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        609,
+        607
+      ],
+      "operativa_en_ramales": [
+        27,
+        609,
+        607
+      ]
+    },
+    {
+      "nombre": "Juan XXIII",
+      "id_estacion": "201",
+      "id_tramo": "28",
+      "orden": "3",
+      "id_referencia": "38420",
+      "latitud": "-34.7713636",
+      "longitud": "-58.4441098",
+      "referencia_orden": "1136",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        609,
+        607
+      ],
+      "operativa_en_ramales": [
+        27,
+        609,
+        607
+      ]
+    },
+    {
+      "nombre": "KM 34",
+      "id_estacion": "205",
+      "id_tramo": "28",
+      "orden": "4",
+      "id_referencia": "38602",
+      "latitud": "-34.7434594",
+      "longitud": "-58.4650160",
+      "referencia_orden": "1318",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        609,
+        607,
+        27
+      ],
+      "operativa_en_ramales": [
+        609,
+        607,
+        27
+      ]
+    },
+    {
+      "nombre": "P. Turner",
+      "id_estacion": "314",
+      "id_tramo": "28",
+      "orden": "5",
+      "id_referencia": "38672",
+      "latitud": "-34.7335958",
+      "longitud": "-58.4743907",
+      "referencia_orden": "1388",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        609,
+        607
+      ],
+      "operativa_en_ramales": [
+        27,
+        609,
+        607
+      ]
+    },
+    {
+      "nombre": "Agustín de Elía",
+      "id_estacion": "9",
+      "id_tramo": "28",
+      "orden": "6",
+      "id_referencia": "38867",
+      "latitud": "-34.7099772",
+      "longitud": "-58.5059186",
+      "referencia_orden": "1583",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        607,
+        27,
+        609
+      ],
+      "operativa_en_ramales": [
+        607,
+        27,
+        609
+      ]
+    },
+    {
+      "nombre": "Tablada",
+      "id_estacion": "383",
+      "id_tramo": "28",
+      "orden": "7",
+      "id_referencia": "39005",
+      "latitud": "-34.6930707",
+      "longitud": "-58.5280209",
+      "referencia_orden": "1721",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        607,
+        609
+      ],
+      "operativa_en_ramales": [
+        27,
+        607,
+        609
+      ]
+    },
+    {
+      "nombre": "San Justo",
+      "id_estacion": "359",
+      "id_tramo": "28",
+      "orden": "8",
+      "id_referencia": "39172",
+      "latitud": "-34.6738305",
+      "longitud": "-58.5558413",
+      "referencia_orden": "1888",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        27,
+        607,
+        609
+      ],
+      "operativa_en_ramales": [
+        27,
+        607,
+        609
+      ]
+    },
+    {
+      "nombre": "Ingeniero S. Brian",
+      "id_estacion": "182",
+      "id_tramo": "28",
+      "orden": "9",
+      "id_referencia": "39291",
+      "latitud": "-34.6580457",
+      "longitud": "-58.5730377",
+      "referencia_orden": "2007",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        607,
+        609,
+        27
+      ],
+      "operativa_en_ramales": [
+        607,
+        609,
+        27
+      ]
+    },
+    {
+      "nombre": "Haedo",
+      "id_estacion": "169",
+      "id_tramo": "9",
+      "orden": "8",
+      "id_referencia": "881",
+      "latitud": "-34.6445334",
+      "longitud": "-58.5918534",
+      "referencia_orden": "881",
+      "radio": "",
+      "andenes_habilitados": "6",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        75,
+        27,
+        607,
+        609,
+        51,
+        53,
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        75,
+        27,
+        607,
+        609,
+        111,
+        1
+      ]
+    }
+  ],
+  "Mitre": [
+    {
+      "nombre": "Retiro (LGM)",
+      "id_estacion": "332",
+      "id_tramo": "1",
+      "orden": "1",
+      "id_referencia": "3653",
+      "latitud": "-34.5909122",
+      "longitud": "-58.3750538",
+      "referencia_orden": "1",
+      "radio": "",
+      "andenes_habilitados": "8",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        9,
+        5,
+        7,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        151,
+        9,
+        5,
+        7,
+        171
+      ]
+    },
+    {
+      "nombre": "3 de febrero",
+      "id_estacion": "1",
+      "id_tramo": "3",
+      "orden": "1",
+      "id_referencia": "6740",
+      "latitud": "-34.5718528",
+      "longitud": "-58.4251600",
+      "referencia_orden": "283",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        7,
+        151,
+        171,
+        9
+      ],
+      "operativa_en_ramales": [
+        7,
+        9
+      ]
+    },
+    {
+      "nombre": "Ministro Carranza",
+      "id_estacion": "272",
+      "id_tramo": "3",
+      "orden": "2",
+      "id_referencia": "6787",
+      "latitud": "-34.5754325",
+      "longitud": "-58.4343684",
+      "referencia_orden": "330",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7,
+        141,
+        151,
+        171,
+        9
+      ],
+      "operativa_en_ramales": [
+        7,
+        141,
+        9
+      ]
+    },
+    {
+      "nombre": "Colegiales",
+      "id_estacion": "91",
+      "id_tramo": "3",
+      "orden": "3",
+      "id_referencia": "6855",
+      "latitud": "-34.5729746",
+      "longitud": "-58.4482530",
+      "referencia_orden": "398",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        171,
+        151,
+        7,
+        9,
+        141
+      ],
+      "operativa_en_ramales": [
+        7,
+        9,
+        141
+      ]
+    },
+    {
+      "nombre": "Belgrano R",
+      "id_estacion": "35",
+      "id_tramo": "3",
+      "orden": "4",
+      "id_referencia": "6926",
+      "latitud": "-34.5678249",
+      "longitud": "-58.4624028",
+      "referencia_orden": "469",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        9,
+        151,
+        171,
+        7
+      ],
+      "operativa_en_ramales": [
+        141,
+        9,
+        7
+      ]
+    },
+    {
+      "nombre": "L.M.Drago",
+      "id_estacion": "236",
+      "id_tramo": "78",
+      "orden": "1",
+      "id_referencia": "8736",
+      "latitud": "-34.5684173",
+      "longitud": "-58.4789912",
+      "referencia_orden": "549",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        9,
+        171,
+        141,
+        151
+      ],
+      "operativa_en_ramales": [
+        9,
+        141
+      ]
+    },
+    {
+      "nombre": "General Urquiza",
+      "id_estacion": "150",
+      "id_tramo": "78",
+      "orden": "2",
+      "id_referencia": "8790",
+      "latitud": "-34.5747120",
+      "longitud": "-58.4878391",
+      "referencia_orden": "603",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        171,
+        9
+      ],
+      "operativa_en_ramales": [
+        141,
+        9
+      ]
+    },
+    {
+      "nombre": "Pueyrredón",
+      "id_estacion": "318",
+      "id_tramo": "78",
+      "orden": "3",
+      "id_referencia": "8863",
+      "latitud": "-34.5804962",
+      "longitud": "-58.5018980",
+      "referencia_orden": "676",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        9,
+        151,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        9
+      ]
+    },
+    {
+      "nombre": "Miguelete",
+      "id_estacion": "271",
+      "id_tramo": "78",
+      "orden": "4",
+      "id_referencia": "8931",
+      "latitud": "-34.5811313",
+      "longitud": "-58.5166476",
+      "referencia_orden": "744",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        171,
+        9
+      ],
+      "operativa_en_ramales": [
+        141,
+        151,
+        171,
+        9
+      ]
+    },
+    {
+      "nombre": "San Martín",
+      "id_estacion": "360",
+      "id_tramo": "78",
+      "orden": "5",
+      "id_referencia": "9011",
+      "latitud": "-34.5739248",
+      "longitud": "-58.5313340",
+      "referencia_orden": "824",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 0,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        505,
+        151,
+        171,
+        9
+      ],
+      "operativa_en_ramales": [
+        141,
+        505,
+        9
+      ]
+    },
+    {
+      "nombre": "San Andrés",
+      "id_estacion": "353",
+      "id_tramo": "78",
+      "orden": "6",
+      "id_referencia": "9083",
+      "latitud": "-34.5637151",
+      "longitud": "-58.5405410",
+      "referencia_orden": "896",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        171,
+        141,
+        151,
+        9
+      ],
+      "operativa_en_ramales": [
+        141,
+        9
+      ]
+    },
+    {
+      "nombre": "Malaver",
+      "id_estacion": "249",
+      "id_tramo": "78",
+      "orden": "7",
+      "id_referencia": "9132",
+      "latitud": "-34.5573725",
+      "longitud": "-58.5479328",
+      "referencia_orden": "945",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        171,
+        9
+      ],
+      "operativa_en_ramales": [
+        141,
+        9
+      ]
+    },
+    {
+      "nombre": "Villa Ballester",
+      "id_estacion": "412",
+      "id_tramo": "78",
+      "orden": "8",
+      "id_referencia": "9183",
+      "latitud": "-34.5510362",
+      "longitud": "-58.5559827",
+      "referencia_orden": "996",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        35,
+        141,
+        151,
+        9,
+        171
+      ],
+      "operativa_en_ramales": [
+        35,
+        141,
+        151,
+        9,
+        171
+      ]
+    },
+    {
+      "nombre": "Chilavert",
+      "id_estacion": "79",
+      "id_tramo": "78",
+      "orden": "9",
+      "id_referencia": "9253",
+      "latitud": "-34.5422320",
+      "longitud": "-58.5669170",
+      "referencia_orden": "1066",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        171,
+        35,
+        9
+      ],
+      "operativa_en_ramales": [
+        35,
+        9
+      ]
+    },
+    {
+      "nombre": "J.L. Suárez",
+      "id_estacion": "190",
+      "id_tramo": "79",
+      "orden": "1",
+      "id_referencia": "806988",
+      "latitud": "-34.5347444",
+      "longitud": "-58.5759721",
+      "referencia_orden": "1125",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        9
+      ],
+      "operativa_en_ramales": [
+        9
+      ]
+    },
+    {
+      "nombre": "Coghlan",
+      "id_estacion": "90",
+      "id_tramo": "5",
+      "orden": "1",
+      "id_referencia": "6986",
+      "latitud": "-34.5654176",
+      "longitud": "-58.4749559",
+      "referencia_orden": "529",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7
+      ],
+      "operativa_en_ramales": [
+        7
+      ]
+    },
+    {
+      "nombre": "Saavedra",
+      "id_estacion": "346",
+      "id_tramo": "5",
+      "orden": "2",
+      "id_referencia": "7070",
+      "latitud": "-34.5545422",
+      "longitud": "-58.4867373",
+      "referencia_orden": "613",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7
+      ],
+      "operativa_en_ramales": [
+        7
+      ]
+    },
+    {
+      "nombre": "Juan B. Justo",
+      "id_estacion": "200",
+      "id_tramo": "5",
+      "orden": "3",
+      "id_referencia": "7146",
+      "latitud": "-34.5425501",
+      "longitud": "-58.4946570",
+      "referencia_orden": "689",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7
+      ],
+      "operativa_en_ramales": [
+        7
+      ]
+    },
+    {
+      "nombre": "Florida",
+      "id_estacion": "141",
+      "id_tramo": "5",
+      "orden": "4",
+      "id_referencia": "7213",
+      "latitud": "-34.5304745",
+      "longitud": "-58.4944563",
+      "referencia_orden": "756",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7
+      ],
+      "operativa_en_ramales": [
+        7
+      ]
+    },
+    {
+      "nombre": "Dr. Cetrángolo",
+      "id_estacion": "119",
+      "id_tramo": "5",
+      "orden": "5",
+      "id_referencia": "7253",
+      "latitud": "-34.5232688",
+      "longitud": "-58.4941393",
+      "referencia_orden": "796",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7
+      ],
+      "operativa_en_ramales": [
+        7
+      ]
+    },
+    {
+      "nombre": "Bmé. Mitre",
+      "id_estacion": "273",
+      "id_tramo": "5",
+      "orden": "6",
+      "id_referencia": "7305",
+      "latitud": "-34.5150276",
+      "longitud": "-58.4892365",
+      "referencia_orden": "848",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        7
+      ],
+      "operativa_en_ramales": [
+        7
+      ]
+    },
+    {
+      "nombre": "Lisandro de la Torre",
+      "id_estacion": "229",
+      "id_tramo": "2",
+      "orden": "1",
+      "id_referencia": "3988",
+      "latitud": "-34.5625299",
+      "longitud": "-58.4367116",
+      "referencia_orden": "336",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Belgrano C",
+      "id_estacion": "34",
+      "id_tramo": "2",
+      "orden": "2",
+      "id_referencia": "4052",
+      "latitud": "-34.5584914",
+      "longitud": "-58.4494807",
+      "referencia_orden": "400",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Nuñez",
+      "id_estacion": "287",
+      "id_tramo": "2",
+      "orden": "3",
+      "id_referencia": "4134",
+      "latitud": "-34.5487486",
+      "longitud": "-58.4625541",
+      "referencia_orden": "482",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Rivadavia",
+      "id_estacion": "337",
+      "id_tramo": "2",
+      "orden": "4",
+      "id_referencia": "4207",
+      "latitud": "-34.5365204",
+      "longitud": "-58.4680326",
+      "referencia_orden": "555",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Vicente López",
+      "id_estacion": "408",
+      "id_tramo": "2",
+      "orden": "5",
+      "id_referencia": "4277",
+      "latitud": "-34.5245542",
+      "longitud": "-58.4728819",
+      "referencia_orden": "625",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Olivos",
+      "id_estacion": "291",
+      "id_tramo": "2",
+      "orden": "6",
+      "id_referencia": "4374",
+      "latitud": "-34.5082230",
+      "longitud": "-58.4804366",
+      "referencia_orden": "722",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "La Lucila",
+      "id_estacion": "212",
+      "id_tramo": "2",
+      "orden": "7",
+      "id_referencia": "4447",
+      "latitud": "-34.4974813",
+      "longitud": "-58.4886129",
+      "referencia_orden": "795",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Martínez",
+      "id_estacion": "262",
+      "id_tramo": "2",
+      "orden": "8",
+      "id_referencia": "4512",
+      "latitud": "-34.4881444",
+      "longitud": "-58.4970405",
+      "referencia_orden": "860",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Acassuso",
+      "id_estacion": "5",
+      "id_tramo": "2",
+      "orden": "9",
+      "id_referencia": "4568",
+      "latitud": "-34.4799498",
+      "longitud": "-58.5040028",
+      "referencia_orden": "916",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "San Isidro C",
+      "id_estacion": "357",
+      "id_tramo": "2",
+      "orden": "10",
+      "id_referencia": "4632",
+      "latitud": "-34.4717862",
+      "longitud": "-58.5137942",
+      "referencia_orden": "980",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Beccar",
+      "id_estacion": "32",
+      "id_tramo": "2",
+      "orden": "11",
+      "id_referencia": "4717",
+      "latitud": "-34.4608043",
+      "longitud": "-58.5265437",
+      "referencia_orden": "1065",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Victoria",
+      "id_estacion": "409",
+      "id_tramo": "7",
+      "orden": "1",
+      "id_referencia": "4790",
+      "latitud": "-34.4561953",
+      "longitud": "-58.5409168",
+      "referencia_orden": "1138",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33,
+        5
+      ],
+      "operativa_en_ramales": [
+        33,
+        5
+      ]
+    },
+    {
+      "nombre": "Virreyes",
+      "id_estacion": "428",
+      "id_tramo": "7",
+      "orden": "2",
+      "id_referencia": "4848",
+      "latitud": "-34.4503293",
+      "longitud": "-58.5511975",
+      "referencia_orden": "1196",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "San Fernando C",
+      "id_estacion": "355",
+      "id_tramo": "7",
+      "orden": "3",
+      "id_referencia": "4898",
+      "latitud": "-34.4440924",
+      "longitud": "-58.5590584",
+      "referencia_orden": "1246",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Carupá",
+      "id_estacion": "65",
+      "id_tramo": "7",
+      "orden": "4",
+      "id_referencia": "4946",
+      "latitud": "-34.4381545",
+      "longitud": "-58.5666484",
+      "referencia_orden": "1294",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Tigre",
+      "id_estacion": "389",
+      "id_tramo": "7",
+      "orden": "5",
+      "id_referencia": "5051",
+      "latitud": "-34.4239474",
+      "longitud": "-58.5812663",
+      "referencia_orden": "1399",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        5
+      ],
+      "operativa_en_ramales": [
+        5
+      ]
+    },
+    {
+      "nombre": "Dr. Schweitzer",
+      "id_estacion": "118",
+      "id_tramo": "6",
+      "orden": "2",
+      "id_referencia": "48089",
+      "latitud": "-34.4720989",
+      "longitud": "-58.5744514",
+      "referencia_orden": "1315",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "El Talar",
+      "id_estacion": "128",
+      "id_tramo": "6",
+      "orden": "3",
+      "id_referencia": "48436",
+      "latitud": "-34.4627922",
+      "longitud": "-58.6460044",
+      "referencia_orden": "1662",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "López Camelo",
+      "id_estacion": "240",
+      "id_tramo": "6",
+      "orden": "4",
+      "id_referencia": "48605",
+      "latitud": "-34.4468958",
+      "longitud": "-58.6773897",
+      "referencia_orden": "1831",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Garín",
+      "id_estacion": "147",
+      "id_tramo": "6",
+      "orden": "5",
+      "id_referencia": "48911",
+      "latitud": "-34.4216230",
+      "longitud": "-58.7365407",
+      "referencia_orden": "2137",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Maq. Savio",
+      "id_estacion": "253",
+      "id_tramo": "6",
+      "orden": "6",
+      "id_referencia": "49093",
+      "latitud": "-34.4069132",
+      "longitud": "-58.7719330",
+      "referencia_orden": "2319",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Matheu",
+      "id_estacion": "264",
+      "id_tramo": "6",
+      "orden": "7",
+      "id_referencia": "49390",
+      "latitud": "-34.3828607",
+      "longitud": "-58.8296505",
+      "referencia_orden": "2616",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Zelaya",
+      "id_estacion": "436",
+      "id_tramo": "6",
+      "orden": "8",
+      "id_referencia": "49586",
+      "latitud": "-34.3701878",
+      "longitud": "-58.8691562",
+      "referencia_orden": "2812",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Los Cardales",
+      "id_estacion": "243",
+      "id_tramo": "6",
+      "orden": "9",
+      "id_referencia": "50174",
+      "latitud": "-34.3309008",
+      "longitud": "-58.9874005",
+      "referencia_orden": "3400",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Capilla del Señor",
+      "id_estacion": "61",
+      "id_tramo": "6",
+      "orden": "10",
+      "id_referencia": "50764",
+      "latitud": "-34.2863605",
+      "longitud": "-59.1024923",
+      "referencia_orden": "3990",
+      "radio": "",
+      "andenes_habilitados": "0",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        33
+      ],
+      "operativa_en_ramales": [
+        33
+      ]
+    },
+    {
+      "nombre": "Bancalari",
+      "id_estacion": "29",
+      "id_tramo": "92",
+      "orden": "1",
+      "id_referencia": "54095",
+      "latitud": "-34.4798228",
+      "longitud": "-58.6028139",
+      "referencia_orden": "1458",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        35,
+        151,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        35,
+        151,
+        171
+      ]
+    },
+    {
+      "nombre": "Gral. Pacheco",
+      "id_estacion": "296",
+      "id_tramo": "92",
+      "orden": "2",
+      "id_referencia": "54251",
+      "latitud": "-34.4558335",
+      "longitud": "-58.6201168",
+      "referencia_orden": "1614",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        35,
+        151,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        35,
+        151,
+        171
+      ]
+    },
+    {
+      "nombre": "Benavídez",
+      "id_estacion": "37",
+      "id_tramo": "92",
+      "orden": "3",
+      "id_referencia": "54645",
+      "latitud": "-34.4092816",
+      "longitud": "-58.6845898",
+      "referencia_orden": "2008",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        151,
+        141,
+        171,
+        35
+      ],
+      "operativa_en_ramales": [
+        151,
+        141,
+        171,
+        35
+      ]
+    },
+    {
+      "nombre": "Ing. Maschwitz",
+      "id_estacion": "263",
+      "id_tramo": "92",
+      "orden": "4",
+      "id_referencia": "54924",
+      "latitud": "-34.3830219",
+      "longitud": "-58.7362697",
+      "referencia_orden": "2287",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        35,
+        151,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        35,
+        151,
+        171
+      ]
+    },
+    {
+      "nombre": "Escobar",
+      "id_estacion": "130",
+      "id_tramo": "92",
+      "orden": "5",
+      "id_referencia": "55254",
+      "latitud": "-34.3496547",
+      "longitud": "-58.7950265",
+      "referencia_orden": "2617",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        35,
+        171,
+        141,
+        151
+      ],
+      "operativa_en_ramales": [
+        35,
+        171,
+        141,
+        151
+      ]
+    },
+    {
+      "nombre": "Río Luján",
+      "id_estacion": "335",
+      "id_tramo": "92",
+      "orden": "6",
+      "id_referencia": "55860",
+      "latitud": "-34.2780361",
+      "longitud": "-58.8903187",
+      "referencia_orden": "3223",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        35,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        151,
+        35,
+        171
+      ]
+    },
+    {
+      "nombre": "Otamendi",
+      "id_estacion": "294",
+      "id_tramo": "92",
+      "orden": "7",
+      "id_referencia": "56172",
+      "latitud": "-34.2222066",
+      "longitud": "-58.8965515",
+      "referencia_orden": "3535",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        35,
+        171
+      ],
+      "operativa_en_ramales": [
+        141,
+        151,
+        35,
+        171
+      ]
+    },
+    {
+      "nombre": "Campana",
+      "id_estacion": "55",
+      "id_tramo": "92",
+      "orden": "8",
+      "id_referencia": "56652",
+      "latitud": "-34.1567628",
+      "longitud": "-58.9584056",
+      "referencia_orden": "4015",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        171,
+        151,
+        141,
+        35
+      ],
+      "operativa_en_ramales": [
+        171,
+        151,
+        141,
+        35
+      ]
+    },
+    {
+      "nombre": "Kilómetro 83",
+      "id_estacion": "204",
+      "id_tramo": "92",
+      "orden": "9",
+      "id_referencia": "56742",
+      "latitud": "-34.1602209",
+      "longitud": "-58.9771690",
+      "referencia_orden": "4105",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        171,
+        141,
+        151,
+        35
+      ],
+      "operativa_en_ramales": [
+        35
+      ]
+    },
+    {
+      "nombre": "Zárate",
+      "id_estacion": "434",
+      "id_tramo": "92",
+      "orden": "10",
+      "id_referencia": "57253",
+      "latitud": "-34.0979051",
+      "longitud": "-59.0378286",
+      "referencia_orden": "4616",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        141,
+        151,
+        171,
+        35
+      ],
+      "operativa_en_ramales": [
+        141,
+        151,
+        171,
+        35
+      ]
+    }
+  ],
+  "San Martín": [
+    {
+      "nombre": "Retiro (LSM)",
+      "id_estacion": "463",
+      "id_tramo": "8",
+      "orden": "1",
+      "id_referencia": "188076",
+      "latitud": "-34.5888579",
+      "longitud": "-58.3741843",
+      "referencia_orden": "4",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Palermo",
+      "id_estacion": "297",
+      "id_tramo": "8",
+      "orden": "2",
+      "id_referencia": "188389",
+      "latitud": "-34.5789111",
+      "longitud": "-58.4268130",
+      "referencia_orden": "317",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Villa Crespo",
+      "id_estacion": "414",
+      "id_tramo": "8",
+      "orden": "3",
+      "id_referencia": "188519",
+      "latitud": "-34.5934824",
+      "longitud": "-58.4485515",
+      "referencia_orden": "447",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "La Paternal",
+      "id_estacion": "216",
+      "id_tramo": "8",
+      "orden": "4",
+      "id_referencia": "188609",
+      "latitud": "-34.5970559",
+      "longitud": "-58.4673174",
+      "referencia_orden": "537",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Villa del Parque",
+      "id_estacion": "415",
+      "id_tramo": "8",
+      "orden": "5",
+      "id_referencia": "188733",
+      "latitud": "-34.6013699",
+      "longitud": "-58.4935315",
+      "referencia_orden": "661",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Saenz Peña",
+      "id_estacion": "348",
+      "id_tramo": "8",
+      "orden": "7",
+      "id_referencia": "188891",
+      "latitud": "-34.6031708",
+      "longitud": "-58.5278989",
+      "referencia_orden": "819",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Caseros",
+      "id_estacion": "67",
+      "id_tramo": "8",
+      "orden": "9",
+      "id_referencia": "189060",
+      "latitud": "-34.6045943",
+      "longitud": "-58.5647095",
+      "referencia_orden": "988",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        75,
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        75,
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Hurlingham",
+      "id_estacion": "177",
+      "id_tramo": "8",
+      "orden": "11",
+      "id_referencia": "189391",
+      "latitud": "-34.5911517",
+      "longitud": "-58.6322349",
+      "referencia_orden": "1319",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "José C. Paz",
+      "id_estacion": "194",
+      "id_tramo": "8",
+      "orden": "17",
+      "id_referencia": "190068",
+      "latitud": "-34.5190115",
+      "longitud": "-58.7504431",
+      "referencia_orden": "1996",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Derqui",
+      "id_estacion": "106",
+      "id_tramo": "8",
+      "orden": "19",
+      "id_referencia": "190502",
+      "latitud": "-34.4908888",
+      "longitud": "-58.8386488",
+      "referencia_orden": "2430",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131,
+        31,
+        65
+      ],
+      "operativa_en_ramales": [
+        131,
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "Pilar",
+      "id_estacion": "306",
+      "id_tramo": "8",
+      "orden": "21",
+      "id_referencia": "190845",
+      "latitud": "-34.4686135",
+      "longitud": "-58.9083124",
+      "referencia_orden": "2773",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        59,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        59,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Manzanares",
+      "id_estacion": "252",
+      "id_tramo": "8",
+      "orden": "22",
+      "id_referencia": "191315",
+      "latitud": "-34.4522459",
+      "longitud": "-59.0067549",
+      "referencia_orden": "3243",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        59,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        59,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Dr. Cabred",
+      "id_estacion": "51",
+      "id_tramo": "8",
+      "orden": "23",
+      "id_referencia": "191688",
+      "latitud": "-34.4878244",
+      "longitud": "-59.0756580",
+      "referencia_orden": "3616",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        59,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        59,
+        65,
+        131
+      ]
+    },
+    {
+      "nombre": "Cortines",
+      "id_estacion": "3672",
+      "id_tramo": "8",
+      "orden": "24",
+      "id_referencia": "192398",
+      "latitud": "-34.5555513",
+      "longitud": "-59.2066397",
+      "referencia_orden": "4326",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Mercedes P",
+      "id_estacion": "3664",
+      "id_tramo": "8",
+      "orden": "27",
+      "id_referencia": "193607",
+      "latitud": "-34.6568159",
+      "longitud": "-59.4312711",
+      "referencia_orden": "5535",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Franklin",
+      "id_estacion": "442",
+      "id_tramo": "8",
+      "orden": "30",
+      "id_referencia": "194668",
+      "latitud": "-34.6101466",
+      "longitud": "-59.6300184",
+      "referencia_orden": "6596",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Rivas",
+      "id_estacion": "470",
+      "id_tramo": "8",
+      "orden": "31",
+      "id_referencia": "195220",
+      "latitud": "-34.6103018",
+      "longitud": "-59.7504883",
+      "referencia_orden": "7148",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Castilla",
+      "id_estacion": "443",
+      "id_tramo": "8",
+      "orden": "32",
+      "id_referencia": "195893",
+      "latitud": "-34.6104373",
+      "longitud": "-59.8974332",
+      "referencia_orden": "7821",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Rawson",
+      "id_estacion": "444",
+      "id_tramo": "8",
+      "orden": "33",
+      "id_referencia": "196672",
+      "latitud": "-34.6104601",
+      "longitud": "-60.0674634",
+      "referencia_orden": "8600",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Cucha Cucha",
+      "id_estacion": "3667",
+      "id_tramo": "8",
+      "orden": "35",
+      "id_referencia": "198240",
+      "latitud": "-34.6217206",
+      "longitud": "-60.4082693",
+      "referencia_orden": "10168",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Chacabuco",
+      "id_estacion": "75",
+      "id_tramo": "8",
+      "orden": "36",
+      "id_referencia": "198527",
+      "latitud": "-34.6296987",
+      "longitud": "-60.4701147",
+      "referencia_orden": "10455",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "O Higgins",
+      "id_estacion": "471",
+      "id_tramo": "8",
+      "orden": "38",
+      "id_referencia": "199648",
+      "latitud": "-34.5815866",
+      "longitud": "-60.7002349",
+      "referencia_orden": "11576",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Junin",
+      "id_estacion": "202",
+      "id_tramo": "8",
+      "orden": "40",
+      "id_referencia": "200821",
+      "latitud": "-34.5841937",
+      "longitud": "-60.9497340",
+      "referencia_orden": "12749",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131
+      ],
+      "operativa_en_ramales": [
+        131
+      ]
+    },
+    {
+      "nombre": "Devoto",
+      "id_estacion": "112",
+      "id_tramo": "8",
+      "orden": "6",
+      "id_referencia": "188822",
+      "latitud": "-34.6026704",
+      "longitud": "-58.5128663",
+      "referencia_orden": "750",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131,
+        31,
+        65
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "Santos Lugares",
+      "id_estacion": "369",
+      "id_tramo": "8",
+      "orden": "8",
+      "id_referencia": "188951",
+      "latitud": "-34.6036828",
+      "longitud": "-58.5409703",
+      "referencia_orden": "879",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "El Palomar",
+      "id_estacion": "127",
+      "id_tramo": "8",
+      "orden": "10",
+      "id_referencia": "189203",
+      "latitud": "-34.6049240",
+      "longitud": "-58.5958736",
+      "referencia_orden": "1131",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "William Morris",
+      "id_estacion": "431",
+      "id_tramo": "8",
+      "orden": "12",
+      "id_referencia": "189522",
+      "latitud": "-34.5785609",
+      "longitud": "-58.6563955",
+      "referencia_orden": "1450",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "Bella Vista",
+      "id_estacion": "36",
+      "id_tramo": "8",
+      "orden": "13",
+      "id_referencia": "189675",
+      "latitud": "-34.5638352",
+      "longitud": "-58.6845919",
+      "referencia_orden": "1603",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131,
+        31,
+        65
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "Muñiz",
+      "id_estacion": "283",
+      "id_tramo": "8",
+      "orden": "14",
+      "id_referencia": "189787",
+      "latitud": "-34.5512323",
+      "longitud": "-58.7034606",
+      "referencia_orden": "1715",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "San Miguel",
+      "id_estacion": "361",
+      "id_tramo": "8",
+      "orden": "15",
+      "id_referencia": "189847",
+      "latitud": "-34.5441372",
+      "longitud": "-58.7132686",
+      "referencia_orden": "1775",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "Sol y Verde",
+      "id_estacion": "378",
+      "id_tramo": "8",
+      "orden": "18",
+      "id_referencia": "190295",
+      "latitud": "-34.5043148",
+      "longitud": "-58.7965871",
+      "referencia_orden": "2223",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        131,
+        31,
+        65
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    },
+    {
+      "nombre": "Villa Astolfi",
+      "id_estacion": "411",
+      "id_tramo": "8",
+      "orden": "20",
+      "id_referencia": "190691",
+      "latitud": "-34.4786178",
+      "longitud": "-58.8770376",
+      "referencia_orden": "2619",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        31,
+        65,
+        131
+      ],
+      "operativa_en_ramales": [
+        31,
+        65
+      ]
+    }
+  ],
+  "Sarmiento": [
+    {
+      "nombre": "Once",
+      "id_estacion": "293",
+      "id_tramo": "87",
+      "orden": "1",
+      "id_referencia": "1",
+      "latitud": "-34.6085914",
+      "longitud": "-58.4075590",
+      "referencia_orden": "1",
+      "radio": "",
+      "andenes_habilitados": "8",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        111,
+        1
+      ]
+    },
+    {
+      "nombre": "Caballito",
+      "id_estacion": "50",
+      "id_tramo": "9",
+      "orden": "1",
+      "id_referencia": "180",
+      "latitud": "-34.6192442",
+      "longitud": "-58.4436522",
+      "referencia_orden": "180",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        111,
+        1
+      ]
+    },
+    {
+      "nombre": "Flores",
+      "id_estacion": "139",
+      "id_tramo": "9",
+      "orden": "2",
+      "id_referencia": "292",
+      "latitud": "-34.6277298",
+      "longitud": "-58.4657649",
+      "referencia_orden": "292",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        1,
+        111
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Floresta",
+      "id_estacion": "140",
+      "id_tramo": "9",
+      "orden": "3",
+      "id_referencia": "366",
+      "latitud": "-34.6323755",
+      "longitud": "-58.4808913",
+      "referencia_orden": "366",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Villa Luro",
+      "id_estacion": "423",
+      "id_tramo": "9",
+      "orden": "4",
+      "id_referencia": "461",
+      "latitud": "-34.6361011",
+      "longitud": "-58.5010544",
+      "referencia_orden": "461",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        51,
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Liniers",
+      "id_estacion": "234",
+      "id_tramo": "9",
+      "orden": "5",
+      "id_referencia": "573",
+      "latitud": "-34.6387919",
+      "longitud": "-58.5252548",
+      "referencia_orden": "573",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        51,
+        111,
+        53,
+        1
+      ],
+      "operativa_en_ramales": [
+        111,
+        1
+      ]
+    },
+    {
+      "nombre": "Ciudadela",
+      "id_estacion": "84",
+      "id_tramo": "9",
+      "orden": "6",
+      "id_referencia": "646",
+      "latitud": "-34.6399227",
+      "longitud": "-58.5411225",
+      "referencia_orden": "646",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        51,
+        111,
+        53,
+        1
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Ramos Mejía",
+      "id_estacion": "327",
+      "id_tramo": "9",
+      "orden": "7",
+      "id_referencia": "753",
+      "latitud": "-34.6404544",
+      "longitud": "-58.5643758",
+      "referencia_orden": "753",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53,
+        51,
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Haedo",
+      "id_estacion": "169",
+      "id_tramo": "9",
+      "orden": "8",
+      "id_referencia": "881",
+      "latitud": "-34.6445334",
+      "longitud": "-58.5918534",
+      "referencia_orden": "881",
+      "radio": "",
+      "andenes_habilitados": "6",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        75,
+        27,
+        607,
+        609,
+        51,
+        53,
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        75,
+        27,
+        607,
+        609,
+        111,
+        1
+      ]
+    },
+    {
+      "nombre": "Morón",
+      "id_estacion": "279",
+      "id_tramo": "9",
+      "orden": "9",
+      "id_referencia": "1010",
+      "latitud": "-34.6482256",
+      "longitud": "-58.6195948",
+      "referencia_orden": "1010",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        51,
+        53,
+        111,
+        1
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Castelar",
+      "id_estacion": "70",
+      "id_tramo": "9",
+      "orden": "10",
+      "id_referencia": "1115",
+      "latitud": "-34.6519632",
+      "longitud": "-58.6419153",
+      "referencia_orden": "1115",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53,
+        111,
+        1,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        1
+      ]
+    },
+    {
+      "nombre": "Ituzaingó",
+      "id_estacion": "186",
+      "id_tramo": "9",
+      "orden": "11",
+      "id_referencia": "1234",
+      "latitud": "-34.6595863",
+      "longitud": "-58.6661833",
+      "referencia_orden": "1234",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53,
+        111,
+        1,
+        51
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "S.A. de Padua",
+      "id_estacion": "347",
+      "id_tramo": "9",
+      "orden": "12",
+      "id_referencia": "1387",
+      "latitud": "-34.6655136",
+      "longitud": "-58.6986426",
+      "referencia_orden": "1387",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        51,
+        53,
+        1,
+        111
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Merlo",
+      "id_estacion": "269",
+      "id_tramo": "9",
+      "orden": "13",
+      "id_referencia": "1523",
+      "latitud": "-34.6644355",
+      "longitud": "-58.7278996",
+      "referencia_orden": "1523",
+      "radio": "",
+      "andenes_habilitados": "7",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53,
+        1,
+        51,
+        111
+      ],
+      "operativa_en_ramales": [
+        53,
+        1,
+        111
+      ]
+    },
+    {
+      "nombre": "Paso del Rey",
+      "id_estacion": "300",
+      "id_tramo": "83",
+      "orden": "2",
+      "id_referencia": "128256",
+      "latitud": "-34.6582078",
+      "longitud": "-58.7621474",
+      "referencia_orden": "1684",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51,
+        1
+      ],
+      "operativa_en_ramales": [
+        1
+      ]
+    },
+    {
+      "nombre": "Moreno",
+      "id_estacion": "278",
+      "id_tramo": "83",
+      "orden": "3",
+      "id_referencia": "128392",
+      "latitud": "-34.6503755",
+      "longitud": "-58.7902146",
+      "referencia_orden": "1820",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        1,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        1,
+        51
+      ]
+    },
+    {
+      "nombre": "Km 34,5",
+      "id_estacion": "464",
+      "id_tramo": "11",
+      "orden": "2",
+      "id_referencia": "72043",
+      "latitud": "-34.6801742",
+      "longitud": "-58.7602409",
+      "referencia_orden": "1721",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "A. Ferrari",
+      "id_estacion": "137",
+      "id_tramo": "11",
+      "orden": "3",
+      "id_referencia": "72212",
+      "latitud": "-34.7060780",
+      "longitud": "-58.7794327",
+      "referencia_orden": "1890",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Mariano Acosta",
+      "id_estacion": "257",
+      "id_tramo": "11",
+      "orden": "4",
+      "id_referencia": "72332",
+      "latitud": "-34.7244791",
+      "longitud": "-58.7930682",
+      "referencia_orden": "2010",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Maquinista R. Cal",
+      "id_estacion": "4601",
+      "id_tramo": "11",
+      "orden": "5",
+      "id_referencia": "72464",
+      "latitud": "-34.7447770",
+      "longitud": "-58.8081306",
+      "referencia_orden": "2142",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Marcos Paz",
+      "id_estacion": "254",
+      "id_tramo": "11",
+      "orden": "6",
+      "id_referencia": "72714",
+      "latitud": "-34.7832092",
+      "longitud": "-58.8366592",
+      "referencia_orden": "2392",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Zamudio",
+      "id_estacion": "432",
+      "id_tramo": "11",
+      "orden": "7",
+      "id_referencia": "73200",
+      "latitud": "-34.8578991",
+      "longitud": "-58.8921946",
+      "referencia_orden": "2878",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Hornos",
+      "id_estacion": "173",
+      "id_tramo": "11",
+      "orden": "8",
+      "id_referencia": "73424",
+      "latitud": "-34.8923029",
+      "longitud": "-58.9178610",
+      "referencia_orden": "3102",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Las Heras",
+      "id_estacion": "225",
+      "id_tramo": "11",
+      "orden": "9",
+      "id_referencia": "73657",
+      "latitud": "-34.9280932",
+      "longitud": "-58.9445443",
+      "referencia_orden": "3335",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Speratti",
+      "id_estacion": "381",
+      "id_tramo": "11",
+      "orden": "10",
+      "id_referencia": "74139",
+      "latitud": "-35.0021051",
+      "longitud": "-58.9998545",
+      "referencia_orden": "3817",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Zapiola",
+      "id_estacion": "433",
+      "id_tramo": "11",
+      "orden": "11",
+      "id_referencia": "74505",
+      "latitud": "-35.0583029",
+      "longitud": "-59.0418857",
+      "referencia_orden": "4183",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        53
+      ],
+      "operativa_en_ramales": [
+        53
+      ]
+    },
+    {
+      "nombre": "Empalme Lobos",
+      "id_estacion": "129",
+      "id_tramo": "51",
+      "orden": "1",
+      "id_referencia": "687235",
+      "latitud": "-35.1515057",
+      "longitud": "-59.0908028",
+      "referencia_orden": "4892",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        55,
+        601,
+        53
+      ],
+      "operativa_en_ramales": [
+        55,
+        601,
+        53
+      ]
+    },
+    {
+      "nombre": "Lobos",
+      "id_estacion": "237",
+      "id_tramo": "51",
+      "orden": "2",
+      "id_referencia": "687424",
+      "latitud": "-35.1848403",
+      "longitud": "-59.0927904",
+      "referencia_orden": "5081",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        601,
+        55,
+        53
+      ],
+      "operativa_en_ramales": [
+        601,
+        55,
+        53
+      ]
+    },
+    {
+      "nombre": "La Reja",
+      "id_estacion": "218",
+      "id_tramo": "83",
+      "orden": "4",
+      "id_referencia": "128573",
+      "latitud": "-34.6399483",
+      "longitud": "-58.8276318",
+      "referencia_orden": "2001",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        51
+      ]
+    },
+    {
+      "nombre": "Fco. Álvarez",
+      "id_estacion": "134",
+      "id_tramo": "83",
+      "orden": "5",
+      "id_referencia": "128707",
+      "latitud": "-34.6322048",
+      "longitud": "-58.8553185",
+      "referencia_orden": "2135",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Ing. PP. Marín",
+      "id_estacion": "310",
+      "id_tramo": "83",
+      "orden": "6",
+      "id_referencia": "128890",
+      "latitud": "-34.6227343",
+      "longitud": "-58.8935420",
+      "referencia_orden": "2318",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        51
+      ]
+    },
+    {
+      "nombre": "Las Malvinas",
+      "id_estacion": "226",
+      "id_tramo": "83",
+      "orden": "7",
+      "id_referencia": "129025",
+      "latitud": "-34.6161210",
+      "longitud": "-58.9218744",
+      "referencia_orden": "2453",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        51
+      ]
+    },
+    {
+      "nombre": "Gral. Rodríguez",
+      "id_estacion": "163",
+      "id_tramo": "83",
+      "orden": "8",
+      "id_referencia": "129176",
+      "latitud": "-34.6087241",
+      "longitud": "-58.9535544",
+      "referencia_orden": "2604",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "La Fraternidad",
+      "id_estacion": "210",
+      "id_tramo": "83",
+      "orden": "9",
+      "id_referencia": "129385",
+      "latitud": "-34.5984984",
+      "longitud": "-58.9974242",
+      "referencia_orden": "2813",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        51
+      ]
+    },
+    {
+      "nombre": "Lezica y Torrezuri",
+      "id_estacion": "231",
+      "id_tramo": "83",
+      "orden": "10",
+      "id_referencia": "129666",
+      "latitud": "-34.5847033",
+      "longitud": "-59.0563650",
+      "referencia_orden": "3094",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        51
+      ]
+    },
+    {
+      "nombre": "Univ. Luján",
+      "id_estacion": "401",
+      "id_tramo": "83",
+      "orden": "11",
+      "id_referencia": "129813",
+      "latitud": "-34.5774739",
+      "longitud": "-59.0871981",
+      "referencia_orden": "3241",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Luján",
+      "id_estacion": "247",
+      "id_tramo": "83",
+      "orden": "12",
+      "id_referencia": "129899",
+      "latitud": "-34.5777553",
+      "longitud": "-59.1052941",
+      "referencia_orden": "3327",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Jáuregui",
+      "id_estacion": "188",
+      "id_tramo": "83",
+      "orden": "13",
+      "id_referencia": "130238",
+      "latitud": "-34.6006948",
+      "longitud": "-59.1736895",
+      "referencia_orden": "3666",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Olivera",
+      "id_estacion": "290",
+      "id_tramo": "83",
+      "orden": "14",
+      "id_referencia": "130642",
+      "latitud": "-34.6279272",
+      "longitud": "-59.2553985",
+      "referencia_orden": "4070",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Gowland",
+      "id_estacion": "155",
+      "id_tramo": "83",
+      "orden": "15",
+      "id_referencia": "131104",
+      "latitud": "-34.6478196",
+      "longitud": "-59.3528390",
+      "referencia_orden": "4532",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Mercedes",
+      "id_estacion": "268",
+      "id_tramo": "83",
+      "orden": "16",
+      "id_referencia": "131478",
+      "latitud": "-34.6577990",
+      "longitud": "-59.4322220",
+      "referencia_orden": "4906",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111,
+        51
+      ]
+    },
+    {
+      "nombre": "Suipacha",
+      "id_estacion": "382",
+      "id_tramo": "83",
+      "orden": "18",
+      "id_referencia": "132838",
+      "latitud": "-34.7732378",
+      "longitud": "-59.6902528",
+      "referencia_orden": "6266",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 0,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111,
+        51
+      ],
+      "operativa_en_ramales": [
+        111
+      ]
+    },
+    {
+      "nombre": "Chivilcoy Sud",
+      "id_estacion": "80",
+      "id_tramo": "83",
+      "orden": "20",
+      "id_referencia": "134497",
+      "latitud": "-34.9173927",
+      "longitud": "-59.9961128",
+      "referencia_orden": "7925",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 0,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111
+      ],
+      "operativa_en_ramales": [
+        111
+      ]
+    },
+    {
+      "nombre": "Andrés Vaccarezza",
+      "id_estacion": "403",
+      "id_tramo": "83",
+      "orden": "22",
+      "id_referencia": "135948",
+      "latitud": "-35.0345000",
+      "longitud": "-60.2771963",
+      "referencia_orden": "9376",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 0,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111
+      ],
+      "operativa_en_ramales": [
+        111
+      ]
+    },
+    {
+      "nombre": "Mechita",
+      "id_estacion": "266",
+      "id_tramo": "83",
+      "orden": "23",
+      "id_referencia": "136574",
+      "latitud": "-35.0664207",
+      "longitud": "-60.4072915",
+      "referencia_orden": "10002",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 0,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111
+      ],
+      "operativa_en_ramales": [
+        111
+      ]
+    },
+    {
+      "nombre": "Bragado",
+      "id_estacion": "46",
+      "id_tramo": "83",
+      "orden": "24",
+      "id_referencia": "137039",
+      "latitud": "-35.1197072",
+      "longitud": "-60.4782808",
+      "referencia_orden": "10467",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 0,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        111
+      ],
+      "operativa_en_ramales": [
+        111
+      ]
+    }
+  ],
+  "Belgrano Sur": [
+    {
+      "nombre": "Dr. A. Sáenz Viad.",
+      "id_estacion": "525",
+      "id_tramo": "13",
+      "orden": "2",
+      "id_referencia": "30116",
+      "latitud": "-34.6490835",
+      "longitud": "-58.4158387",
+      "referencia_orden": "123",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        67,
+        21,
+        73,
+        25
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Dr. A. Sáenz  Prov.",
+      "id_estacion": "121",
+      "id_tramo": "13",
+      "orden": "3",
+      "id_referencia": "30131",
+      "latitud": "-34.6484899",
+      "longitud": "-58.4189585",
+      "referencia_orden": "138",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        67,
+        21,
+        25,
+        73
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Villa Soldati",
+      "id_estacion": "427",
+      "id_tramo": "13",
+      "orden": "4",
+      "id_referencia": "30281",
+      "latitud": "-34.6622828",
+      "longitud": "-58.4410917",
+      "referencia_orden": "288",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        21,
+        25
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Pte. Arturo Illia",
+      "id_estacion": "313",
+      "id_tramo": "13",
+      "orden": "5",
+      "id_referencia": "30322",
+      "latitud": "-34.6656436",
+      "longitud": "-58.4490599",
+      "referencia_orden": "329",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        21,
+        25
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Villa Lugano",
+      "id_estacion": "422",
+      "id_tramo": "13",
+      "orden": "6",
+      "id_referencia": "30468",
+      "latitud": "-34.6772759",
+      "longitud": "-58.4770979",
+      "referencia_orden": "475",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        21,
+        25
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Villa Madero",
+      "id_estacion": "424",
+      "id_tramo": "13",
+      "orden": "7",
+      "id_referencia": "30551",
+      "latitud": "-34.6840433",
+      "longitud": "-58.4923276",
+      "referencia_orden": "558",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        67,
+        73,
+        21,
+        25
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Marinos del Fournier",
+      "id_estacion": "260",
+      "id_tramo": "13",
+      "orden": "8",
+      "id_referencia": "30629",
+      "latitud": "-34.6901777",
+      "longitud": "-58.5076299",
+      "referencia_orden": "636",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        21,
+        25
+      ],
+      "operativa_en_ramales": [
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Tapiales",
+      "id_estacion": "385",
+      "id_tramo": "13",
+      "orden": "9",
+      "id_referencia": "30727",
+      "latitud": "-34.7024078",
+      "longitud": "-58.5116991",
+      "referencia_orden": "734",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        67,
+        73,
+        21,
+        25
+      ],
+      "operativa_en_ramales": [
+        67,
+        73,
+        21,
+        25
+      ]
+    },
+    {
+      "nombre": "Dr. Ing. Castello",
+      "id_estacion": "181",
+      "id_tramo": "14",
+      "orden": "1",
+      "id_referencia": "35851",
+      "latitud": "-34.7102867",
+      "longitud": "-58.5060412",
+      "referencia_orden": "792",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67,
+        25
+      ]
+    },
+    {
+      "nombre": "Querandí",
+      "id_estacion": "321",
+      "id_tramo": "14",
+      "orden": "2",
+      "id_referencia": "35984",
+      "latitud": "-34.7224666",
+      "longitud": "-58.5309116",
+      "referencia_orden": "925",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67,
+        25
+      ]
+    },
+    {
+      "nombre": "Laferrere",
+      "id_estacion": "209",
+      "id_tramo": "14",
+      "orden": "3",
+      "id_referencia": "36275",
+      "latitud": "-34.7507523",
+      "longitud": "-58.5844338",
+      "referencia_orden": "1216",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67,
+        25
+      ]
+    },
+    {
+      "nombre": "María Eva Duarte",
+      "id_estacion": "256",
+      "id_tramo": "14",
+      "orden": "4",
+      "id_referencia": "36356",
+      "latitud": "-34.7561325",
+      "longitud": "-58.6008057",
+      "referencia_orden": "1297",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67,
+        25
+      ]
+    },
+    {
+      "nombre": "Independencia",
+      "id_estacion": "178",
+      "id_tramo": "14",
+      "orden": "5",
+      "id_referencia": "36438",
+      "latitud": "-34.7609176",
+      "longitud": "-58.6177546",
+      "referencia_orden": "1379",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        25,
+        67
+      ],
+      "operativa_en_ramales": [
+        73,
+        25,
+        67
+      ]
+    },
+    {
+      "nombre": "González Catán",
+      "id_estacion": "154",
+      "id_tramo": "14",
+      "orden": "6",
+      "id_referencia": "36586",
+      "latitud": "-34.7717022",
+      "longitud": "-58.6468732",
+      "referencia_orden": "1527",
+      "radio": "",
+      "andenes_habilitados": "4",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        67,
+        73,
+        25
+      ],
+      "operativa_en_ramales": [
+        67,
+        73,
+        25
+      ]
+    },
+    {
+      "nombre": "Aldo Bonzi",
+      "id_estacion": "12",
+      "id_tramo": "16",
+      "orden": "1",
+      "id_referencia": "30807",
+      "latitud": "-34.7107066",
+      "longitud": "-58.5143488",
+      "referencia_orden": "691",
+      "radio": "",
+      "andenes_habilitados": "5",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        63,
+        21
+      ],
+      "operativa_en_ramales": [
+        23,
+        63,
+        21
+      ]
+    },
+    {
+      "nombre": "Sánchez de Mendeville",
+      "id_estacion": "354",
+      "id_tramo": "16",
+      "orden": "2",
+      "id_referencia": "30856",
+      "latitud": "-34.7123564",
+      "longitud": "-58.5247424",
+      "referencia_orden": "740",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "José Ingenieros",
+      "id_estacion": "195",
+      "id_tramo": "16",
+      "orden": "3",
+      "id_referencia": "30914",
+      "latitud": "-34.7107620",
+      "longitud": "-58.5372560",
+      "referencia_orden": "798",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "Justo Villegas",
+      "id_estacion": "203",
+      "id_tramo": "16",
+      "orden": "4",
+      "id_referencia": "30982",
+      "latitud": "-34.7089650",
+      "longitud": "-58.5519393",
+      "referencia_orden": "866",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "Isidro Casanova",
+      "id_estacion": "184",
+      "id_tramo": "16",
+      "orden": "5",
+      "id_referencia": "31146",
+      "latitud": "-34.7045467",
+      "longitud": "-58.5873422",
+      "referencia_orden": "1030",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "Rafael Castillo",
+      "id_estacion": "325",
+      "id_tramo": "16",
+      "orden": "6",
+      "id_referencia": "31327",
+      "latitud": "-34.6996678",
+      "longitud": "-58.6264089",
+      "referencia_orden": "1211",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "Merlo Gómez",
+      "id_estacion": "270",
+      "id_tramo": "16",
+      "orden": "7",
+      "id_referencia": "31424",
+      "latitud": "-34.6970410",
+      "longitud": "-58.6473450",
+      "referencia_orden": "1308",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "Libertad",
+      "id_estacion": "232",
+      "id_tramo": "16",
+      "orden": "8",
+      "id_referencia": "31605",
+      "latitud": "-34.6921470",
+      "longitud": "-58.6864030",
+      "referencia_orden": "1489",
+      "radio": "",
+      "andenes_habilitados": "3",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        23,
+        21,
+        63
+      ],
+      "operativa_en_ramales": [
+        23,
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "Marinos C. G Belgrano",
+      "id_estacion": "259",
+      "id_tramo": "16",
+      "orden": "9",
+      "id_referencia": "31833",
+      "latitud": "-34.7089204",
+      "longitud": "-58.7312927",
+      "referencia_orden": "1717",
+      "radio": "",
+      "andenes_habilitados": "2",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        21,
+        63,
+        23
+      ],
+      "operativa_en_ramales": [
+        21,
+        63
+      ]
+    },
+    {
+      "nombre": "20 de Junio",
+      "id_estacion": "526",
+      "id_tramo": "14",
+      "orden": "7",
+      "id_referencia": "705078",
+      "latitud": "-34.7802634",
+      "longitud": "-58.7379094",
+      "referencia_orden": "1958",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67
+      ]
+    },
+    {
+      "nombre": "Marcos Paz",
+      "id_estacion": "3700",
+      "id_tramo": "14",
+      "orden": "9",
+      "id_referencia": "705508",
+      "latitud": "-34.7864831",
+      "longitud": "-58.8296055",
+      "referencia_orden": "2388",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67
+      ]
+    },
+    {
+      "nombre": "Villars",
+      "id_estacion": "4226",
+      "id_tramo": "14",
+      "orden": "10",
+      "id_referencia": "706098",
+      "latitud": "-34.8288257",
+      "longitud": "-58.9387133",
+      "referencia_orden": "2978",
+      "radio": "",
+      "andenes_habilitados": "1",
+      "visibilidad": {
+        "totem": 1,
+        "app_mobile": 1
+      },
+      "incluida_en_ramales": [
+        73,
+        67,
+        25
+      ],
+      "operativa_en_ramales": [
+        73,
+        67
+      ]
+    }
+  ]
+}

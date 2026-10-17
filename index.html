@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSOFSE | Portal Ferroviario Metropolitano en Tiempo Real</title>
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Tipografia Oficial DinPro de Carteleria Ferroviaria */
+        @font-face {
+            font-family: 'DinPro';
+            src: url('dinpro.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Reseteo y Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0f141c;
+            color: #f1f5f9;
+            font-family: 'DinPro', 'Segoe UI', system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        /* Franja Superior Institucional de Lineas */
+        .lines-accent-bar {
+            width: 100%;
+            height: 6px;
+            display: flex;
+        }
+
+        .line-bar-roca { background-color: #30a9e0; flex: 1; }
+        .line-bar-mitre { background-color: #0072ce; flex: 1; }
+        .line-bar-sanmartin { background-color: #00828a; flex: 1; }
+        .line-bar-sarmiento { background-color: #00853f; flex: 1; }
+        .line-bar-belgranosur { background-color: #d9381e; flex: 1; }
+
+        /* Contenedor Principal */
+        .portal-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        /* Encabezado del Portal */
+        .portal-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .portal-emblem {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            background-color: #1a2332;
+            border: 2px solid #0072ce;
+            border-radius: 12px;
+            color: #38bdf8;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .portal-title {
+            font-size: 3.2em;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .portal-title span {
+            color: #30a9e0;
+        }
+
+        .portal-subtitle {
+            font-size: 1.25em;
+            color: #94a3b8;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            max-width: 750px;
+            line-height: 1.5;
+            margin: 0 auto;
+        }
+
+        .portal-tagline {
+            display: inline-block;
+            margin-top: 14px;
+            background-color: #1a2433;
+            color: #38bdf8;
+            border: 1px solid #28374d;
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 0.85em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Grilla de los 3 Botones Principales */
+        .portal-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+            max-width: 1100px;
+            margin-bottom: 40px;
+        }
+
+        .portal-card {
+            background-color: #161e2b;
+            border: 2px solid #28374d;
+            border-radius: 12px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+            position: relative;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-4px);
+            background-color: #1d283a;
+            border-color: #30a9e0;
+        }
+
+        .portal-card:active {
+            transform: translateY(0);
+        }
+
+        /* Iconos de Tarjetas */
+        .card-icon-container {
+            width: 76px;
+            height: 76px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2em;
+            margin-bottom: 22px;
+            border: 2px solid #ffffff;
+        }
+
+        .card-tablero .card-icon-container {
+            background-color: #0072ce;
+            color: #ffffff;
+            border-color: #30a9e0;
+        }
+
+        .card-radar .card-icon-container {
+            background-color: #00828a;
+            color: #ffffff;
+            border-color: #2dd4bf;
+        }
+
+        .card-webapp .card-icon-container {
+            background-color: #00853f;
+            color: #ffffff;
+            border-color: #4ade80;
+        }
+
+        /* Tipografia de Tarjetas */
+        .card-title {
+            font-size: 1.6em;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-description {
+            font-size: 0.98em;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        /* Boton de Accion Interno */
+        .card-action-btn {
+            width: 100%;
+            padding: 12px 18px;
+            border-radius: 6px;
+            font-size: 0.95em;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+        }
+
+        .card-tablero .card-action-btn {
+            background-color: #30a9e0;
+            color: #ffffff;
+        }
+
+        .card-radar .card-action-btn {
+            background-color: #00828a;
+            color: #ffffff;
+        }
+
+        .card-webapp .card-action-btn {
+            background-color: #00853f;
+            color: #ffffff;
+        }
+
+        .portal-card:hover .card-action-btn {
+            filter: brightness(1.15);
+        }
+
+        /* Informacion Adicional del Sistema */
+        .portal-specs {
+            width: 100%;
+            max-width: 1100px;
+            background-color: #141b26;
+            border: 1px solid #222d3e;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #cbd5e1;
+            font-size: 0.95em;
+        }
+
+        .spec-item i {
+            font-size: 1.3em;
+            color: #38bdf8;
+        }
+
+        .spec-item strong {
+            color: #ffffff;
+        }
+
+        /* Pie de Pagina Institucional y Legal */
+        .portal-footer {
+            width: 100%;
+            background-color: #090d13;
+            border-top: 1px solid #1c2635;
+            padding: 32px 24px 28px 24px;
+            color: #64748b;
+            font-size: 0.88em;
+            line-height: 1.6;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .footer-credits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            color: #94a3b8;
+            font-size: 0.95em;
+        }
+
+        .footer-credits a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-credits a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-disclaimer {
+            color: #64748b;
+            font-size: 0.85em;
+            text-align: justify;
+        }
+
+        .footer-copy {
+            color: #475569;
+            font-size: 0.82em;
+            text-align: center;
+            padding-top: 12px;
+            border-top: 1px solid #141c28;
+        }
+
+        /* Adaptabilidad Responsiva */
+        @media (max-width: 900px) {
+            .portal-buttons-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .portal-title {
+                font-size: 2.5em;
+            }
+
+            .portal-specs {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Franja Superior de Lineas Ferroviarias Metropolitanas -->
+    <div class="lines-accent-bar">
+        <div class="line-bar-roca" title="Línea Roca"></div>
+        <div class="line-bar-mitre" title="Línea Mitre"></div>
+        <div class="line-bar-sanmartin" title="Línea San Martín"></div>
+        <div class="line-bar-sarmiento" title="Línea Sarmiento"></div>
+        <div class="line-bar-belgranosur" title="Línea Belgrano Sur"></div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="portal-wrapper">
+        <header class="portal-header">
+            <div class="portal-emblem">
+                <i class="fa-solid fa-train-subway"></i>
+            </div>
+            <h1 class="portal-title">Open<span>SOFSE</span></h1>
+            <p class="portal-subtitle">
+                Plataforma abierta de información operativa, cartelería de estación y telemetría satelital en tiempo real para los ferrocarriles metropolitanos argentinos.
+            </p>
+            <div class="portal-tagline">
+                Servicio Libre y Gratuito para Pasajeros
+            </div>
+        </header>
+
+        <!-- Tres Botones Principales -->
+        <section class="portal-buttons-grid">
+            <!-- 1. TABLERO -->
+            <a href="tablero.html" class="portal-card card-tablero" title="Acceder a la Cartelera Digital de Estación">
+                <div class="card-icon-container">
+                    <i class="fa-solid fa-chalkboard"></i>
+                </div>
+                <h2 class="card-title">Tablero</h2>
+                <p class="card-description">
+                    Simulación fiel de los monitores de estación con partidas y arribos en tiempo real, andenes asignados, demoras y estados operativos en cabeceras e intermedias.
+                </p>
+                <div class="card-action-btn">
+                    <span>Ver Tablero</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <!-- 2. RADAR EN VIVO -->
+            <a href="mapa.html" class="portal-card card-radar" title="Acceder al Mapa Satelital de Trenes en Vivo">
+                <div class="card-icon-container">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+                <h2 class="card-title">Radar en Vivo</h2>
+                <p class="card-description">
+                    Mapa cartográfico y satelital interactivo en alta resolución con posicionamiento GPS de trenes en circulación, velocidad de marcha, rumbo y ficha de formaciones.
+                </p>
+                <div class="card-action-btn">
+                    <span>Explorar Radar</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <!-- 3. WEBAPP -->
+            <a href="webapp.html" class="portal-card card-webapp" title="Acceder a la Aplicación Web para Móviles">
+                <div class="card-icon-container">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h2 class="card-title">Webapp</h2>
+                <p class="card-description">
+                    Aplicación web ágil diseñada para dispositivos móviles, consulta de horarios programados, recorridos por ramal y estado de los servicios ferroviarios.
+                </p>
+                <div class="card-action-btn">
+                    <span>Abrir Webapp</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+        </section>
+
+        <!-- Métricas del Sistema -->
+        <section class="portal-specs">
+            <div class="spec-item">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Cobertura: <strong>5 Líneas Metropolitanas</strong></span>
+            </div>
+            <div class="spec-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Red Férrea: <strong>254 Estaciones</strong></span>
+            </div>
+            <div class="spec-item">
+                <i class="fa-solid fa-satellite"></i>
+                <span>Telemetría: <strong>GPS Satelital Activo</strong></span>
+            </div>
+            <div class="spec-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Actualización: <strong>Tiempo Real Continuo</strong></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Pagina del Inicio -->
+    <footer class="portal-footer">
+        <div class="footer-container">
+            <!-- Créditos y Atribuciones -->
+            <div class="footer-credits">
+                <span>API por <a href="https://trenes.sofse.apidocs.ar/" target="_blank" rel="noopener noreferrer">https://trenes.sofse.apidocs.ar/</a></span>
+                <span>Logos SVG por Hurfer</span>
+            </div>
+
+            <!-- Descargo de Responsabilidad en Terminología Jurídica Argentina -->
+            <div class="footer-disclaimer">
+                Descargo de responsabilidad jurídica: OpenSOFSE es un desarrollo informático comunitario independiente y de código abierto. No posee vinculación societaria, jurídica, administrativa, institucional, laboral ni contractual con Ferrocarriles Argentinos Sociedad Anónima Unipersonal ni con Operadora Ferroviaria Sociedad Anónima. Las marcas registradas, nombres comerciales, logotipos e imagotipos exhibidos pertenecen a sus respectivos titulares legales y se emplean exclusivamente con propósitos informativos públicos y de identificación técnica.
+            </div>
+
+            <div class="footer-copy">
+                OpenSOFSE &copy; 2026. Acceso público y comunitario para los usuarios del ferrocarril.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

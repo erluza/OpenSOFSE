@@ -1,0 +1,1118 @@
+/* ==========================================================================
+   WEBAPP TRENES ARGENTINOS / OPENSOFSE
+   Estilo visual 100% idéntico a la aplicación oficial móvil de Trenes Argentinos
+   Referencia estricta: Photos-1-001 (IMG_2553 a IMG_2562)
+   ========================================================================== */
+
+/* Tipografía Oficial DinPro */
+@font-face {
+    font-family: 'DinPro';
+    src: url('dinpro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --app-bg: #ebf0f4;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --border-color: #e2e8f0;
+    --input-border: #d4dbe3;
+    
+    --brand-blue: #0072ce;
+    --roca-blue: #30a9e0;
+    --roca-light: #a8d1e7;
+    --sarmiento-green: #00853f;
+    --sanmartin-teal: #00828a;
+    --mitre-blue: #0072ce;
+    --belgrano-red: #d9381e;
+    
+    --btn-dark: #2d3748;
+    --btn-inactive: #b4bcc8;
+    --track-color: #475569;
+    --node-color: #9ec5db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #1a222d;
+    color: var(--text-primary);
+    font-family: 'DinPro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del Dispositivo / Shell */
+.app-device-shell {
+    width: 100%;
+    max-width: 440px;
+    height: 100vh;
+    max-height: 920px;
+    background-color: var(--app-bg);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 500px) {
+    .app-device-shell {
+        border-radius: 28px;
+        height: 94vh;
+        border: 4px solid #2d3748;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: var(--app-bg);
+    }
+    .app-device-shell {
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* Barra Superior de la Aplicación (Header Blanco) */
+.app-header {
+    background-color: #ffffff;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    border-bottom: 1px solid #edf2f7;
+    flex-shrink: 0;
+    z-index: 100;
+}
+
+.app-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-train-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-divider {
+    width: 1.5px;
+    height: 32px;
+    background-color: #2d3748;
+}
+
+.brand-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-text-block .t-line1 {
+    font-size: 1.05em;
+    font-weight: 900;
+    color: #1e293b;
+    line-height: 1.05;
+    letter-spacing: 0.8px;
+}
+
+.brand-text-block .t-line2 {
+    font-size: 1.05em;
+    font-weight: 900;
+    color: #1e293b;
+    line-height: 1.05;
+    letter-spacing: 0.8px;
+}
+
+.app-portal-return {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #f1f5f9;
+}
+
+.app-portal-return:hover {
+    color: var(--brand-blue);
+}
+
+/* Área de Pantallas / Viewport con Aislamiento Estricto */
+.app-viewport {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100% - 64px);
+    background-color: var(--app-bg);
+}
+
+/* Vistas de la App */
+.app-screen {
+    display: none !important;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 76px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--app-bg);
+    animation: fadeIn 0.18s ease;
+}
+
+.app-screen.active {
+    display: flex !important;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ==========================================================================
+   PANTALLA 1: INICIO (HOME - IMG_2553, IMG_2555, IMG_2556)
+   ========================================================================== */
+
+/* Tarjetas Principales */
+.home-card {
+    background-color: var(--card-bg);
+    border-radius: 18px;
+    margin: 12px 14px 6px 14px;
+    padding: 18px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Formulario de Búsqueda de Origen y Destino */
+.search-inputs-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.search-vertical-track-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 20px;
+    padding: 4px 0;
+}
+
+.indicator-pin {
+    color: #718096;
+    font-size: 1.15em;
+}
+
+.indicator-dashed-line {
+    width: 1.5px;
+    flex-grow: 1;
+    border-left: 2px dashed #cbd5e1;
+    margin: 4px 0;
+}
+
+.indicator-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #718096;
+}
+
+.search-fields-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-pill-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1.5px solid var(--input-border);
+    border-radius: 24px;
+    height: 44px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+
+.input-pill-container:hover, .input-pill-container.active {
+    border-color: #94a3b8;
+}
+
+.input-pill-text {
+    flex-grow: 1;
+    font-size: 0.98em;
+    color: #1e293b;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.input-pill-text.placeholder {
+    color: #94a3b8;
+}
+
+.btn-clear-field {
+    background: none;
+    border: none;
+    color: #4b5563;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.search-side-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 84px;
+    width: 32px;
+    align-items: center;
+}
+
+.btn-icon-side {
+    background: none;
+    border: none;
+    color: #718096;
+    font-size: 1.35em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.btn-icon-side:hover {
+    color: #2d3748;
+}
+
+.btn-icon-side.fav-active {
+    color: #ef4444;
+}
+
+/* Fila de Fecha, Hora y Botón Ir */
+.datetime-submit-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.datetime-pill {
+    background-color: #ffffff;
+    border: 1.5px solid #c9d8e5;
+    border-radius: 22px;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92em;
+    color: #1e293b;
+    font-weight: 700;
+    cursor: pointer;
+    flex-grow: 1;
+    position: relative;
+    user-select: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.datetime-pill:hover, .datetime-pill:focus-within {
+    border-color: #0072ce;
+    background-color: #f8fafc;
+}
+
+.datetime-pill i {
+    color: #475569;
+    font-size: 1.05em;
+    pointer-events: none;
+}
+
+.datetime-pill span {
+    font-weight: 700;
+    color: #1e293b;
+    pointer-events: none;
+}
+
+.hidden-datetime-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    z-index: 5;
+}
+
+.btn-circle-ir {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--btn-inactive);
+    color: #ffffff;
+    border: none;
+    font-size: 1.05em;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    flex-shrink: 0;
+}
+
+.btn-circle-ir.active {
+    background-color: var(--btn-dark);
+    cursor: pointer;
+}
+
+.btn-circle-ir.active:active {
+    transform: scale(0.94);
+}
+
+/* Sección Mis Favoritos */
+.section-title {
+    font-size: 1.15em;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.favorites-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.fav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    min-width: 86px;
+    max-width: 105px;
+    position: relative;
+    padding: 6px 4px;
+    border-radius: 12px;
+    transition: background-color 0.15s ease;
+}
+
+.fav-item:hover {
+    background-color: #f1f5f9;
+}
+
+.fav-delete-btn {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    color: #475569;
+    border: none;
+    font-size: 0.72em;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    transition: all 0.15s ease;
+}
+
+.fav-delete-btn:hover {
+    background-color: #ef4444;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.fav-icon-box {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.fav-add-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #374151;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin-bottom: 6px;
+}
+
+.fav-name {
+    font-size: 0.82em;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.25;
+}
+
+/* Sección Estado del Servicio AMBA */
+.lines-status-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 4px 2px 8px 2px;
+}
+
+.line-status-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.status-info-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #374151;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.line-status-name {
+    font-size: 0.95em;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.line-status-alert {
+    font-size: 0.72em;
+    color: #64748b;
+    line-height: 1.2;
+}
+
+/* ==========================================================================
+   PANTALLA 2: SELECTOR DE ESTACIÓN (IMG_2554)
+   ========================================================================== */
+.screen-picker {
+    background-color: #4a5568;
+    padding: 16px 16px 80px 16px;
+    color: #ffffff;
+}
+
+.picker-top-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-picker-back {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.picker-search-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+.picker-search-input {
+    width: 100%;
+    background: transparent;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 24px;
+    height: 42px;
+    padding: 0 40px 0 18px;
+    color: #ffffff;
+    font-size: 1em;
+    outline: none;
+    font-family: inherit;
+}
+
+.picker-search-input::placeholder {
+    color: #cbd5e1;
+}
+
+.picker-search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #cbd5e1;
+    font-size: 1em;
+}
+
+.picker-filters-block {
+    margin-bottom: 18px;
+}
+
+.picker-filter-label {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+.picker-chips-row {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.picker-chip {
+    background-color: #374151;
+    color: #ffffff;
+    border: 1.5px solid transparent;
+    border-radius: 18px;
+    padding: 6px 14px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.picker-chip.active {
+    background-color: #1f2937;
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+.picker-section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.95em;
+    font-weight: 700;
+    margin: 18px 0 10px 0;
+}
+
+.picker-stations-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.picker-station-item {
+    padding: 10px 0;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.picker-station-item:hover {
+    color: #38bdf8;
+}
+
+.station-dist-label {
+    font-size: 0.85em;
+    color: #94a3b8;
+}
+
+/* ==========================================================================
+   PANTALLA 3: RESULTADOS DE VIAJE (IMG_2559)
+   ========================================================================== */
+.results-header-banner {
+    background-color: var(--roca-light);
+    height: 80px;
+    position: relative;
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn-banner-back {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.results-summary-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin: -40px 14px 12px 14px;
+    padding: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 10;
+}
+
+.results-accordions-row {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.accordion-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95em;
+    font-weight: 800;
+    color: #1e293b;
+    cursor: pointer;
+}
+
+.accordion-item i {
+    color: #475569;
+}
+
+.results-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 14px 20px 14px;
+}
+
+/* Tarjeta de Servicio Ferroviario (Exacta a IMG_2559) */
+.service-ticket-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    border: 1px solid #edf2f7;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.service-ticket-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.ticket-header-pill {
+    background-color: #9ec5db;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-weight: 800;
+    font-size: 1.05em;
+}
+
+.ticket-body {
+    padding: 14px 16px 16px 16px;
+}
+
+.ticket-meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88em;
+    color: #64748b;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.ticket-times-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.time-big {
+    font-size: 2.3em;
+    font-weight: 900;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.time-countdown {
+    font-size: 2.3em;
+    font-weight: 900;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.time-countdown small {
+    font-size: 0.45em;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.ticket-track-line {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    position: relative;
+}
+
+.track-dashed {
+    width: 100%;
+    border-top: 2px dashed #94a3b8;
+}
+
+.track-arrow-circle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1.5px solid #64748b;
+    background-color: #ffffff;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65em;
+}
+
+.ticket-labels-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-station-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-station-label.dest {
+    align-items: flex-end;
+}
+
+.ticket-station-label small {
+    font-size: 0.75em;
+    color: #94a3b8;
+    font-weight: 700;
+}
+
+.ticket-station-label strong {
+    font-size: 0.95em;
+    color: #1e293b;
+    font-weight: 800;
+}
+
+.service-num-tag {
+    font-size: 0.75em;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* ==========================================================================
+   PANTALLA 4: ITINERARIO Y TREN EN VIVO EN LA VÍA (IMG_2560, 2561, 2562)
+   ========================================================================== */
+.itinerary-top-bar {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #edf2f7;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.itinerary-title-pill {
+    flex-grow: 1;
+    border: 1.5px solid #64748b;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.95em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-map-shortcut {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Trazado Vertical de Vía */
+.itinerary-track-container {
+    padding: 24px 20px 140px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.itinerary-vertical-line {
+    position: absolute;
+    top: 30px;
+    bottom: 150px;
+    width: 6px;
+    background-color: var(--track-color);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.station-stop-row {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.station-stop-name {
+    width: 42%;
+    text-align: right;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1e293b;
+    padding-right: 14px;
+}
+
+.station-stop-node {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--node-color);
+    border: 2.5px solid var(--track-color);
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.station-stop-node.train-at-platform {
+    background-color: #0284c7;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.35);
+}
+
+.station-stop-time {
+    width: 42%;
+    padding-left: 14px;
+}
+
+.time-pill-badge {
+    display: inline-block;
+    background-color: var(--track-color);
+    color: #ffffff;
+    font-size: 0.85em;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
+/* TREN EN VIVO EN LA VÍA (Exacto a IMG_2561 y IMG_2562) */
+.live-train-on-track {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    margin: -4px 0;
+}
+
+.live-train-icon-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1e293b;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    animation: trainPulse 2s infinite ease-out;
+}
+
+@keyframes trainPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Tarjeta Fija Inferior en el Itinerario (Aislada estrictamente dentro de itinerario) */
+.itinerary-bottom-card-fixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 12px 14px 12px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.itinerary-bottom-card-fixed * {
+    pointer-events: auto;
+}
+
+/* ==========================================================================
+   PANTALLA 6: MENÚ
+   ========================================================================== */
+.screen-menu {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 20px 24px 80px 24px;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #1e293b;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.menu-item:hover {
+    color: var(--brand-blue);
+}
+
+.menu-item i {
+    font-size: 1.25em;
+    color: #475569;
+    width: 28px;
+    text-align: center;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 36px;
+    padding-bottom: 24px;
+}
+
+.menu-opensofse-logo {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN INFERIOR (BOTTOM TAB BAR - IMG_2553)
+   ========================================================================== */
+.app-bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 62px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 200;
+}
+
+.nav-tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    color: #94a3b8;
+    font-size: 1.45em;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.nav-tab-item.active {
+    color: var(--brand-blue);
+}

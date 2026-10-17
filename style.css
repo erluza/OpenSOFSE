@@ -1,0 +1,1065 @@
+/* ==========================================================================
+   TABLERO EN VIVO - TRENES ARGENTINOS
+   Estilos visuales fieles a la señalética y cartelería ferroviaria oficial
+   Color tradicional unificado en todas las estaciones
+   ========================================================================== */
+
+/* Fuente oficial DinPro */
+@font-face {
+    font-family: 'DinPro';
+    src: url('dinpro.otf') format('opentype');
+}
+
+/* Colores tradicionales del tablero */
+:root {
+    --bg-traditional-display: #30a9e0; /* Celeste tradicional */
+    --bg-traditional-column: #2a9dcc;  /* Fondo columnas de trenes */
+    --bg-traditional-ticker: #2b67d9;  /* Fondo ticker marquesina */
+    --bg-traditional-footer: #1d46b4;  /* Fondo institucional pie */
+}
+
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12151b;
+    color: #0d2a57; 
+    font-family: 'DinPro', sans-serif;
+    margin: 0;
+    padding: 12px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   BARRA SUPERIOR DE NAVEGACIÓN ("INICIO" + BUSCADOR GLOBAL)
+   ========================================================================== */
+.top-nav-bar {
+    width: 95%;
+    max-width: 1800px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #191f27;
+    border: 1px solid #2a3442;
+    border-radius: 8px;
+    padding: 8px 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.nav-terminals {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav-section-label {
+    color: #8fa0b5;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-right: 4px;
+}
+
+.terminal-tab {
+    background: #222a36;
+    border: 1px solid #334052;
+    color: #d5e0eb;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DinPro', sans-serif;
+    font-size: 1.05em;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.terminal-tab:hover {
+    background: #2c3645;
+    border-color: #485c75;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.terminal-tab.active {
+    background: #2b3747;
+    border-color: #30a9e0;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(48, 169, 224, 0.35);
+}
+
+/* Insignias de Línea en los botones */
+.line-pill {
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.pill-roca { background-color: #30a9e0; }
+.pill-mitre { background-color: #0072ce; }
+.pill-sanmartin { background-color: #00828a; }
+.pill-sarmiento { background-color: #00853f; }
+.pill-belgranosur { background-color: #d9381e; }
+
+/* Sección Extra / Acciones Derecha */
+.nav-extra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.custom-station-tag {
+    background: #1c324a;
+    border: 1px solid #30a9e0;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    animation: fadeIn 0.3s ease;
+}
+
+.custom-station-tag button {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 0 0 4px;
+    line-height: 1;
+}
+
+.custom-station-tag button:hover {
+    color: #ff3333;
+}
+
+.btn-search {
+    background: #1f2733;
+    border: 1px dashed #4e6178;
+    color: #a9bfd6;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-family: 'DinPro', sans-serif;
+    font-size: 0.95em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-search:hover {
+    background: #2a3547;
+    border-color: #30a9e0;
+    color: #ffffff;
+    border-style: solid;
+}
+
+.btn-radar-link {
+    background: #0369a1;
+    border: 1px solid #38bdf8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
+}
+
+.btn-radar-link:hover {
+    background: #0284c7;
+    border-color: #7dd3fc;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.45);
+}
+
+.live-status-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #2a3547;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00e676;
+    box-shadow: 0 0 8px #00e676;
+    animation: live-pulse 2s infinite ease-in-out;
+}
+
+@keyframes live-pulse {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 12px #00e676; }
+    100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.status-text {
+    color: #00e676;
+    font-size: 0.85em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.refresh-countdown {
+    color: #7d90a4;
+    font-size: 0.8em;
+    margin-left: 2px;
+}
+
+.btn-nav-action {
+    background: #222a36;
+    border: 1px solid #334052;
+    color: #a9bfd6;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-nav-action:hover {
+    background: #2e3a49;
+    color: #ffffff;
+    border-color: #485c75;
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL DEL TABLERO (COLOR TRADICIONAL CELESTE)
+   ========================================================================== */
+.display-container {
+    background-color: var(--bg-traditional-display);
+    width: 95%;
+    max-width: 1800px;
+    border: 6px solid #b0b0b0;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 -20px;
+    border-bottom: none;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    color: var(--bg-traditional-display);
+    text-transform: uppercase;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 5px solid var(--bg-traditional-display);
+    border-right: 5px solid var(--bg-traditional-display);
+    padding: 5px 15px;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.clock-labels {
+    text-align: left;
+    color: var(--bg-traditional-display);
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+.clock-labels span {
+    display: block;
+}
+
+#clock {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--bg-traditional-display);
+}
+
+/* ==========================================================================
+   GRILLA DE 6 COLUMNAS DE TRENES (FONDO TRADICIONAL)
+   ========================================================================== */
+main {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 15px 0;
+    min-height: 480px;
+    overflow-x: hidden;
+    flex-grow: 1;
+}
+
+.train-column {
+    background-color: var(--bg-traditional-column);
+    color: white;
+    width: calc((100% - 50px) / 6);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+/* Columna en modo Standby / Sin servicio asignado */
+.train-column.standby {
+    opacity: 0.65;
+}
+
+.train-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-section:first-child {
+    width: 32%;
+    border-right: 2px solid white;
+}
+
+.header-section:last-child {
+    width: 68%;
+}
+
+.header-section span {
+    display: block;
+    font-weight: bold;
+}
+
+.header-section span:first-child {
+    font-size: 0.8em;
+}
+
+.platform, .departure-time {
+    font-size: 1.6em;
+}
+
+.destination {
+    background-color: white;
+    color: #0d2a57;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 1.45em;
+    font-weight: bold;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.status-bar {
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.status-bar.programado { background-color: #ffa500; }
+.status-bar.en-anden { background-color: #009a44; }
+.status-bar.en-estacion { background-color: #0ea5e9; }
+.status-bar.aproximando { background-color: #f59e0b; }
+.status-bar.demorado,
+.status-bar.cancelado {
+    background-color: #d90429; /* Rojo reglamentario */
+}
+.status-bar.sin-servicio {
+    background-color: #555555;
+    color: #cccccc;
+}
+
+.stops-list {
+    list-style: none;
+    padding: 8px 4px;
+    margin: 10px 0 0 0;
+    font-size: 0.88em;
+    line-height: 1.35;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    flex-grow: 1;
+}
+
+.stops-list li {
+    padding: 1px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Modo compacto para servicios con muchas paradas (> 12) */
+.stops-list.compact {
+    font-size: 0.76em;
+    line-height: 1.2;
+}
+
+.stops-list.compact li {
+    padding: 0;
+}
+
+/* ==========================================================================
+   TICKER INFORMATIVO (FONDO TRADICIONAL AZUL)
+   ========================================================================== */
+#message-bar {
+    flex-shrink: 0;
+    margin: 0 -20px;
+    overflow: hidden;
+    background-color: var(--bg-traditional-ticker);
+}
+
+.ticker-wrap { 
+    padding: 6px 0; 
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker p {
+    margin: 0;
+    font-size: 1.45em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA INSTITUCIONAL (FONDO TRADICIONAL + LOGOS)
+   ========================================================================== */
+footer {
+    background-color: var(--bg-traditional-footer);
+    flex-shrink: 0;
+    margin: 0 -20px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-linea { 
+    height: 48px;
+    max-width: 380px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Convierte el logo en blanco puro para contrastar en el fondo azul */
+    transition: opacity 0.2s ease;
+}
+
+.logo-transporte { 
+    height: 48px;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   MODAL DE BÚSQUEDA GLOBAL DE ESTACIONES (REDISEÑADO Y OPTIMIZADO)
+   ========================================================================== */
+.station-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.78);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.2s ease;
+}
+
+.station-modal-overlay.visible {
+    display: flex;
+}
+
+.station-modal {
+    background-color: #171c24;
+    color: #e1e7ed;
+    border: 1px solid #2e3a4a;
+    border-radius: 12px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 920px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.station-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 18px 24px 12px 24px;
+    border-bottom: 1px solid #283240;
+}
+
+.station-modal-header h2 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #ffffff;
+}
+
+.station-modal-header .subtitle {
+    margin: 4px 0 0 0;
+    font-size: 0.9em;
+    color: #8fa0b5;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2.2em;
+    color: #8fa0b5;
+    cursor: pointer;
+    line-height: 0.8;
+}
+
+.close-btn:hover {
+    color: #ffffff;
+}
+
+.station-search-container {
+    padding: 14px 24px 8px 24px;
+}
+
+#station-search-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: #212936;
+    border: 1px solid #38465a;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-family: 'DinPro', sans-serif;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#station-search-input:focus {
+    border-color: #30a9e0;
+    box-shadow: 0 0 10px rgba(48, 169, 224, 0.25);
+}
+
+.station-line-filters {
+    display: flex;
+    gap: 8px;
+    padding: 4px 24px 10px 24px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: #212936;
+    border: 1px solid #38465a;
+    color: #a9bfd6;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'DinPro', sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+    background: #2b3647;
+    color: #ffffff;
+}
+
+.filter-btn.active {
+    background: #30a9e0;
+    border-color: #30a9e0;
+    color: #ffffff;
+}
+
+.modal-status-bar {
+    padding: 4px 24px 10px 24px;
+    border-bottom: 1px solid #283240;
+    font-size: 0.85em;
+    color: #8fa0b5;
+}
+
+.stations-list-container {
+    padding: 18px 24px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+    max-height: 460px;
+}
+
+.station-card {
+    background: #212936;
+    border: 1px solid #2e3a4a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.15s ease;
+}
+
+.station-card:hover {
+    background: #2b3647;
+    border-color: #30a9e0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.station-card .station-name {
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.station-card .station-line-badge {
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+/* ==========================================================================
+   PANEL DE CONTROL MANUAL (SIMULADOR MODIFICABLE)
+   ========================================================================== */
+#control-panel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+#control-panel-overlay.visible {
+    display: flex;
+}
+
+#control-panel-content {
+    background-color: #f4f6f9;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    width: 90%;
+    max-width: 700px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.panel-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0d2a57;
+}
+
+#close-panel-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: #6c757d;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.panel-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.panel-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.panel-column h4 {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1d46b4;
+    display: flex;
+    align-items: center;
+}
+
+.panel-column h4 .step {
+    background-color: #1d46b4;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#control-panel-content label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+#control-panel-content input[type="text"],
+#control-panel-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: -5px 0 15px 5px;
+}
+.checkbox-container input {
+    width: auto;
+    margin-right: 8px;
+}
+.checkbox-container label {
+    width: auto;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    color: #555;
+    font-weight: normal;
+}
+
+#station-toggle-list {
+    height: 180px;
+    overflow-y: auto;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.station-toggle-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.station-toggle-item input {
+    width: auto;
+    margin-right: 10px;
+}
+.station-toggle-item label {
+    width: auto;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+#station-select option:disabled {
+    color: #adb5bd;
+}
+
+.panel-footer {
+    background-color: #e9ecef;
+    padding: 15px 20px;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.ticker-control {
+    display: flex;
+    flex-grow: 1;
+}
+.ticker-control input {
+    flex-grow: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+.ticker-control button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#update-train-btn, #clear-overrides-btn, .ticker-control button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+#update-train-btn { background-color: #28a745; }
+.ticker-control button { background-color: #007bff; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   DISEÑO RESPONSIVO DEL TABLERO (PC 100% ZOOM, TABLETS Y CELULARES)
+   ========================================================================== */
+
+/* Laptops y pantallas <= 1200px */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: clamp(1.4em, 3vw, 2.2em);
+    }
+
+    #clock {
+        font-size: clamp(1.4em, 3vw, 2.2em);
+    }
+
+    .clock-labels {
+        font-size: clamp(0.75em, 1.5vw, 1em);
+    }
+
+    /* Las 6 columnas se convierten en scroll horizontal táctil con snap para no aplastarse */
+    main {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 15px;
+    }
+
+    .train-column {
+        width: 230px;
+        min-width: 220px;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+
+    .top-nav-bar {
+        width: 98%;
+        padding: 6px 10px;
+    }
+
+    .nav-terminals {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        scrollbar-width: none;
+        padding-bottom: 2px;
+    }
+
+    .nav-terminals::-webkit-scrollbar {
+        display: none;
+    }
+
+    .terminal-tab {
+        flex-shrink: 0;
+        padding: 5px 9px;
+        font-size: 0.9em;
+    }
+}
+
+/* Teléfonos y Dispositivos Móviles (<= 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 0 16px 0;
+    }
+
+    .top-nav-bar {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 6px;
+        gap: 8px;
+    }
+
+    .nav-section-label {
+        display: none;
+    }
+
+    .display-container {
+        width: 100%;
+        border-width: 3px;
+        border-radius: 0;
+        padding: 0 10px;
+    }
+
+    header {
+        margin: 0 -10px;
+        padding: 8px 12px;
+    }
+
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    #clock {
+        font-size: 1.3em;
+        letter-spacing: 1px;
+    }
+
+    .clock-labels {
+        font-size: 0.7em;
+    }
+
+    .clock-container {
+        padding: 2px 8px;
+        border-width: 3px;
+    }
+
+    /* Columnas en móvil */
+    .train-column {
+        width: 215px;
+        min-width: 200px;
+    }
+
+    .destination {
+        font-size: 1.15em;
+        min-height: 42px;
+        padding: 6px 2px;
+    }
+
+    .status-bar {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    .platform, .departure-time {
+        font-size: 1.3em;
+    }
+
+    .stops-list {
+        font-size: 0.8em;
+    }
+
+    /* Pie Institucional en móvil */
+    footer {
+        font-size: 1em;
+        padding: 8px 10px;
+        margin: 0 -10px;
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo-linea {
+        height: 24px;
+    }
+
+    .ticker-container {
+        margin: 0 -10px;
+        font-size: 0.95em;
+        padding: 6px 10px;
+    }
+
+    .btn-search {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+
+    .btn-radar-link {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+
+    .live-status-badge {
+        font-size: 0.75em;
+        padding: 4px 6px;
+    }
+
+    .btn-nav-action {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+    }
+}

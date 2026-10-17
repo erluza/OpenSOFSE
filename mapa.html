@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Ferroviario en Vivo - Trenes Argentinos</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Estilos del Radar Satelital -->
+    <link rel="stylesheet" href="mapa.css">
+</head>
+<body class="radar-body">
+    <!-- Barra Superior de Control del Radar (Responsiva) -->
+    <header class="radar-top-bar">
+        <div class="radar-top-left">
+            <a href="index.html" class="radar-btn-nav" title="Volver al Portal OpenSOFSE">
+                <i class="fa-solid fa-house"></i>
+                <span class="btn-nav-text">Inicio</span>
+            </a>
+            <a href="tablero.html" class="radar-btn-nav" title="Ir al Tablero de Salidas">
+                <i class="fa-solid fa-chalkboard"></i>
+                <span class="btn-nav-text">Tablero</span>
+            </a>
+            <div class="radar-brand">
+                <i class="fa-solid fa-satellite-dish radar-dish-icon"></i>
+                <div class="brand-text">
+                    <h1>RADAR EN VIVO</h1>
+                    <span class="sub-brand">SOFSE TELEMETRÍA GPS</span>
+                </div>
+            </div>
+            <div class="radar-live-indicator">
+                <span class="pulse-dot"></span>
+                <span class="live-label">EN VIVO</span>
+                <span id="train-counter-badge" class="train-counter-badge">
+                    <i class="fa-solid fa-train"></i> <strong id="trains-active-count">0</strong><span class="train-counter-unit"> formaciones</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Búsqueda y Capas -->
+        <div class="radar-top-right">
+            <div class="radar-search-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="radar-search-input" placeholder="Buscar formación (ej. F156, RC06) o estación..." autocomplete="off">
+                <button id="radar-search-clear" class="clear-btn" style="display: none;">✕</button>
+            </div>
+
+            <!-- Botones Rápidos de Modo de Mapa -->
+            <div class="quick-map-modes">
+                <button class="quick-mode-btn active" data-layer-quick="satellite" title="Imágenes Satelitales ESRI HD">
+                    <i class="fa-solid fa-satellite"></i>
+                    <span>Satelital</span>
+                </button>
+                <button class="quick-mode-btn" data-layer-quick="hybrid" title="Satelital con nombres de calles">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Híbrido</span>
+                </button>
+                <button class="quick-mode-btn" data-layer-quick="dark" title="Radar Nocturno Dark Matter">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Nocturno</span>
+                </button>
+                <button class="quick-mode-btn" data-layer-quick="voyager" title="Mapa Estándar Claro de Calles y Vías">
+                    <i class="fa-solid fa-map"></i>
+                    <span>Calles</span>
+                </button>
+            </div>
+
+            <!-- Selector Completo de Capas de Mapa (Satelital / Cartográfico sin API Keys) -->
+            <div class="map-layer-selector">
+                <button id="btn-layer-menu" class="radar-btn-action" title="Cambiar capa de mapa">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span id="current-layer-name">Satelital HD</span>
+                    <i class="fa-solid fa-chevron-down caret-icon"></i>
+                </button>
+                <div id="layer-dropdown" class="layer-dropdown">
+                    <div class="layer-option active" data-layer="satellite">
+                        <i class="fa-solid fa-satellite"></i>
+                        <div class="layer-desc">
+                            <strong>Satelital HD</strong>
+                            <small>Imágenes satelitales ESRI de alta resolución</small>
+                        </div>
+                    </div>
+                    <div class="layer-option" data-layer="hybrid">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <div class="layer-desc">
+                            <strong>Satelital Híbrido</strong>
+                            <small>Satelital con nombres de calles y localidades</small>
+                        </div>
+                    </div>
+                    <div class="layer-option" data-layer="dark">
+                        <i class="fa-solid fa-moon"></i>
+                        <div class="layer-desc">
+                            <strong>Radar Ferroviario Nocturno</strong>
+                            <small>CartoDB Dark Matter para alto contraste de vías</small>
+                        </div>
+                    </div>
+                    <div class="layer-option" data-layer="osm">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <div class="layer-desc">
+                            <strong>OpenStreetMap Estándar</strong>
+                            <small>Cartografía global detallada con vías férreas</small>
+                        </div>
+                    </div>
+                    <div class="layer-option" data-layer="voyager">
+                        <i class="fa-solid fa-sun"></i>
+                        <div class="layer-desc">
+                            <strong>Mapa Estándar Claro</strong>
+                            <small>Cartografía clara y limpia con trazado de vías</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón Refrescar y Cuenta Regresiva -->
+            <button id="btn-refresh-radar" class="radar-btn-action" title="Actualizar posiciones en vivo">
+                <i class="fa-solid fa-rotate" id="refresh-icon"></i>
+                <span id="refresh-timer-badge">20s</span>
+            </button>
+
+            <!-- Toggle Búsqueda Móvil -->
+            <button id="btn-toggle-mobile-search" class="radar-btn-action btn-mobile-search-toggle" title="Buscar formación o estación">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <!-- Toggle Panel Lateral -->
+            <button id="btn-toggle-sidebar" class="radar-btn-action btn-sidebar-toggle" title="Mostrar/ocultar formaciones">
+                <i class="fa-solid fa-list-ul"></i>
+                <span class="btn-sidebar-label">Lista</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal del Mapa -->
+    <div class="radar-main-content">
+        <div id="map" class="map-view"></div>
+
+        <!-- Barra Flotante de Filtros de Línea (Responsiva, Deslizable y Centrada) -->
+        <nav class="radar-floating-line-bar" aria-label="Filtros de Línea Ferroviaria">
+            <button class="line-filter-chip active" data-line="all">
+                <span>Todas</span>
+            </button>
+            <button class="line-filter-chip chip-roca" data-line="Roca">
+                <span class="dot-indicator"></span><span>Roca</span>
+            </button>
+            <button class="line-filter-chip chip-mitre" data-line="Mitre">
+                <span class="dot-indicator"></span><span>Mitre</span>
+            </button>
+            <button class="line-filter-chip chip-sanmartin" data-line="San Martín">
+                <span class="dot-indicator"></span><span>San Martín</span>
+            </button>
+            <button class="line-filter-chip chip-sarmiento" data-line="Sarmiento">
+                <span class="dot-indicator"></span><span>Sarmiento</span>
+            </button>
+            <button class="line-filter-chip chip-belgrano" data-line="Belgrano Sur">
+                <span class="dot-indicator"></span><span>Belgrano Sur</span>
+            </button>
+        </nav>
+
+        <!-- Fondo Oscuro de Cierre para Móviles -->
+        <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+        <!-- Panel Lateral Deslizable de Formaciones y Estaciones -->
+        <aside id="radar-sidebar" class="radar-sidebar visible">
+            <div class="sidebar-header">
+                <div class="sidebar-tabs">
+                    <button class="sidebar-tab active" data-tab="trains">
+                        <i class="fa-solid fa-train"></i>
+                        <span>Trenes en Vía (<span id="sidebar-trains-count">0</span>)</span>
+                    </button>
+                    <button class="sidebar-tab" data-tab="stations">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Estaciones (254)</span>
+                    </button>
+                </div>
+                <button id="btn-close-sidebar" class="sidebar-close-btn" title="Minimizar panel">✕</button>
+            </div>
+
+            <div id="sidebar-trains-list" class="sidebar-tab-content active">
+                <div class="sidebar-trains-scroll" id="sidebar-trains-container">
+                    <!-- Poblado en tiempo real con las formaciones detectadas -->
+                </div>
+            </div>
+
+            <div id="sidebar-stations-list" class="sidebar-tab-content">
+                <div class="sidebar-stations-scroll" id="sidebar-stations-container">
+                    <!-- Lista de estaciones -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Ficha Técnica de la Formación Seleccionada (Inspector de Material Rodante) -->
+        <div id="formation-inspector" class="formation-inspector">
+            <div class="inspector-card">
+                <!-- Indicador de arrastre táctil para vista mobile -->
+                <div class="inspector-drag-handle"></div>
+                <div class="inspector-header">
+                    <div class="formation-tag">
+                        <span id="inspector-train-icon" class="traction-icon"><i class="fa-solid fa-bolt"></i></span>
+                        <div>
+                            <div class="formation-code-title" id="inspector-formation-code">FORMACIÓN ---</div>
+                            <div class="formation-model-subtitle" id="inspector-formation-model">Modelo y Material Rodante</div>
+                        </div>
+                    </div>
+                    <button id="btn-close-inspector" class="inspector-close-btn" title="Cerrar ficha">×</button>
+                </div>
+
+                <div class="inspector-body">
+                    <!-- Badges Principales -->
+                    <div class="badges-row">
+                        <span id="inspector-line-badge" class="inspector-badge badge-line">Línea Roca</span>
+                        <span id="inspector-traction-badge" class="inspector-badge badge-traction"><i class="fa-solid fa-bolt"></i> Eléctrica</span>
+                        <span id="inspector-service-badge" class="inspector-badge badge-service">Servicio #----</span>
+                        <span id="inspector-status-badge" class="inspector-badge badge-status">EN ANDÉN</span>
+                    </div>
+
+                    <!-- Métricas de Telemetría en Vivo -->
+                    <div class="telemetry-grid">
+                        <div class="telemetry-box">
+                            <span class="telemetry-label"><i class="fa-solid fa-gauge-high"></i> Velocidad</span>
+                            <span class="telemetry-value"><strong id="inspector-speed">0</strong> <small>km/h</small></span>
+                        </div>
+                        <div class="telemetry-box">
+                            <span class="telemetry-label"><i class="fa-solid fa-signs-post"></i> Andén Asignado</span>
+                            <span class="telemetry-value" id="inspector-platform">-</span>
+                        </div>
+                        <div class="telemetry-box">
+                            <span class="telemetry-label"><i class="fa-solid fa-ruler-horizontal"></i> Distancia</span>
+                            <span class="telemetry-value" id="inspector-distance">0 m</span>
+                        </div>
+                        <div class="telemetry-box">
+                            <span class="telemetry-label"><i class="fa-solid fa-satellite"></i> Balizas GPS</span>
+                            <span class="telemetry-value" id="inspector-gps-count">0 activas</span>
+                        </div>
+                    </div>
+
+                    <!-- Detalles del Recorrido -->
+                    <div class="route-details-box">
+                        <div class="route-terminals">
+                            <div>
+                                <small>ORIGEN</small>
+                                <strong id="inspector-origin">---</strong>
+                            </div>
+                            <i class="fa-solid fa-arrow-right-long route-arrow"></i>
+                            <div>
+                                <small>DESTINO</small>
+                                <strong id="inspector-destination">---</strong>
+                            </div>
+                        </div>
+                        <div class="next-station-row">
+                            <span><i class="fa-solid fa-location-arrow"></i> Posición / Próxima Estación:</span>
+                            <strong id="inspector-next-station">---</strong>
+                        </div>
+                        <div class="technical-row" id="inspector-gps-ids-row">
+                            <small>IDs Balizas GPS:</small>
+                            <span id="inspector-gps-ids">---</span>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción -->
+                    <div class="inspector-actions">
+                        <button id="btn-follow-train" class="action-btn-primary">
+                            <i class="fa-solid fa-crosshairs"></i> Centrar en Mapa
+                        </button>
+                        <a id="btn-view-board" href="tablero.html" class="action-btn-secondary">
+                            <i class="fa-solid fa-chalkboard"></i> Ver Tablero en Vivo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: Base de datos de estaciones + Leaflet + Lógica del Radar -->
+    <script src="stations_data.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="mapa.js"></script>
+</body>
+</html>

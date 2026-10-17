@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero En Vivo - Trenes Argentinos</title>
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra Superior de Navegación: Terminales de Inicio + Buscador Global -->
+    <nav class="top-nav-bar">
+        <div class="nav-terminals">
+            <span class="nav-section-label">INICIO:</span>
+            <button class="terminal-tab" data-station-id="332" data-line="Mitre">
+                <span class="line-pill pill-mitre">MITRE</span>
+                <span class="tab-title">Retiro</span>
+            </button>
+            <button class="terminal-tab" data-station-id="463" data-line="San Martín">
+                <span class="line-pill pill-sanmartin">SAN MARTÍN</span>
+                <span class="tab-title">Retiro</span>
+            </button>
+            <button class="terminal-tab active" data-station-id="93" data-line="Roca">
+                <span class="line-pill pill-roca">ROCA</span>
+                <span class="tab-title">Constitución</span>
+            </button>
+            <button class="terminal-tab" data-station-id="293" data-line="Sarmiento">
+                <span class="line-pill pill-sarmiento">SARMIENTO</span>
+                <span class="tab-title">Once</span>
+            </button>
+            <button class="terminal-tab" data-station-id="525" data-line="Belgrano Sur">
+                <span class="line-pill pill-belgranosur">BELGRANO SUR</span>
+                <span class="tab-title">Sáenz</span>
+            </button>
+        </div>
+
+        <div class="nav-extra">
+            <div id="custom-station-tag" class="custom-station-tag" style="display: none;">
+                <span class="pin-icon">📍</span>
+                <span id="custom-station-name">Estación</span>
+                <button id="clear-custom-station-btn" title="Volver a Constitución">✕</button>
+            </div>
+
+            <button id="btn-search-station" class="btn-search" title="Buscar cualquier estación de la red">
+                <span class="search-icon">🔍</span>
+                <span class="search-label">Cualquier Estación...</span>
+            </button>
+
+            <a href="index.html" class="btn-radar-link" title="Volver al Portal OpenSOFSE" style="background: #1e293b; color: #f1f5f9; border-color: #334155;">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+            </a>
+
+            <a href="mapa.html" class="btn-radar-link" title="Ver Radar y Mapa Satelital de Formaciones en Vivo">
+                <i class="fa-solid fa-satellite-dish"></i>
+                <span>Radar en Vivo</span>
+            </a>
+
+            <div class="live-status-badge" id="live-status-container">
+                <span class="pulse-dot"></span>
+                <span class="status-text" id="live-status-text">EN VIVO</span>
+                <span class="refresh-countdown" id="refresh-timer" title="Tiempo hasta próxima actualización">30s</span>
+            </div>
+
+            <button id="btn-refresh" class="btn-nav-action" title="Actualizar datos ahora">↻</button>
+            <button id="btn-toggle-panel" class="btn-nav-action" title="Panel de Control Manual (Ctrl+Alt+C)">⚙</button>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal del Tablero Físico (Color Tradicional) -->
+    <div class="display-container" id="display-container">
+        <header>
+            <h1 id="board-title">PLAZA C. Próximas Salidas</h1>
+            <div class="clock-container">
+                <div class="clock-labels">
+                    <span>HORA</span>
+                    <span>ACTUAL</span>
+                </div>
+                <span id="clock">--:--</span>
+            </div>
+        </header>
+        
+        <main id="board-container">
+            <!-- 6 columnas de trenes generadas dinámicamente -->
+        </main>
+
+        <div id="message-bar">
+            <div class="ticker-wrap">
+                <div class="ticker">
+                  <p id="ticker-message">Cargando información oficial del servicio...</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <img id="footer-line-logo" src="logo_roca.svg" alt="Trenes Argentinos" class="logo-linea">
+            <img src="Transporte.png" alt="Ministerio de Transporte" class="logo-transporte">
+        </footer>
+    </div>
+
+    <!-- Modal para Selección de Cualquier Estación de la Red -->
+    <div id="station-modal-overlay" class="station-modal-overlay">
+        <div class="station-modal">
+            <div class="station-modal-header">
+                <div>
+                    <h2>Tableros de la Red Ferroviaria</h2>
+                    <p class="subtitle">Escribí o seleccioná cualquier estación para ver su tablero en tiempo real</p>
+                </div>
+                <button id="close-station-modal-btn" class="close-btn" title="Cerrar (Esc)">×</button>
+            </div>
+            
+            <div class="station-search-container">
+                <input type="text" id="station-search-input" placeholder="Buscar estación... ej. Quilmes, Morón, Tigre, Temperley, Chascomús, Pilar" autocomplete="off">
+            </div>
+
+            <div class="station-line-filters">
+                <button class="filter-btn active" data-filter="all">Todas (<span id="count-all">254</span>)</button>
+                <button class="filter-btn" data-filter="Roca">Roca (<span id="count-roca">94</span>)</button>
+                <button class="filter-btn" data-filter="Mitre">Mitre (<span id="count-mitre">56</span>)</button>
+                <button class="filter-btn" data-filter="San Martín">San Martín (<span id="count-sanmartin">32</span>)</button>
+                <button class="filter-btn" data-filter="Sarmiento">Sarmiento (<span id="count-sarmiento">46</span>)</button>
+                <button class="filter-btn" data-filter="Belgrano Sur">Belgrano Sur (<span id="count-belgrano">26</span>)</button>
+            </div>
+
+            <div class="modal-status-bar">
+                <span id="stations-result-count">Mostrando 254 estaciones</span>
+            </div>
+
+            <div id="stations-list-container" class="stations-list-container">
+                <!-- Se poblará de forma instantánea desde STATIONS_DB -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de Control Manual (Ctrl+Alt+C) -->
+    <div id="control-panel-overlay">
+        <div id="control-panel-content">
+            <div class="panel-header">
+                <h2>Panel de Control (Simulador Manual)</h2>
+                <button id="close-panel-btn">×</button>
+            </div>
+            
+            <div class="panel-body">
+                <div class="panel-column">
+                    <h4><span class="step">1</span>Seleccionar Tren</h4>
+                    <label for="board-slot-select">Posición en Tablero:</label>
+                    <select id="board-slot-select"></select>
+
+                    <label for="ramal-select">Ramal:</label>
+                    <select id="ramal-select"></select>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="experimental-checkbox">
+                        <label for="experimental-checkbox">Incluir Ramales Experimentales</label>
+                    </div>
+
+                    <h4><span class="step">3</span>Datos del Servicio</h4>
+                    <label for="new-time">Hora Salida (HH:MM):</label>
+                    <input type="text" id="new-time" placeholder="Ej: 22:45">
+
+                    <label for="new-platform">Andén:</label>
+                    <input type="text" id="new-platform" placeholder="Ej: 8">
+
+                    <label for="new-status">Estado:</label>
+                    <select id="new-status">
+                        <option value="programado">PROGRAMADO</option>
+                        <option value="en-anden">EN ANDÉN</option>
+                        <option value="demorado">DEMORADO</option>
+                        <option value="cancelado">CANCELADO</option>
+                    </select>
+                </div>
+
+                <div class="panel-column">
+                    <h4><span class="step">2</span>Configurar Paradas</h4>
+                    <label>Paradas del Servicio:</label>
+                    <div id="station-toggle-list"></div>
+                    <label for="station-select">Destino Final del Tren:</label>
+                    <select id="station-select"></select>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <div class="ticker-control">
+                    <input type="text" id="custom-ticker-message" placeholder="Escribir mensaje para el ticker...">
+                    <button id="update-ticker-btn">Enviar</button>
+                </div>
+                <button id="clear-overrides-btn" style="background-color: #6c757d; margin-right: 8px;">Restablecer a En Vivo</button>
+                <button id="update-train-btn">Forzar Actualización de Tren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: Base de datos estática para soporte 100% offline y local en file:// + Simulador -->
+    <script src="stations_data.js"></script>
+    <script src="simulator.js"></script>
+</body>
+</html>
