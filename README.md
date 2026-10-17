@@ -69,6 +69,6 @@ Descargo de responsabilidad jurídica según el ordenamiento legal de la Repúbl
 
 OpenSOFSE es un proyecto independiente de desarrollo comunitario y software libre con propósitos educativos, informativos y de preservación cultural ferroviaria. 
 
-El proyecto no posee vinculación jurídica, administrativa, comercial, laboral, institucional ni societaria de ninguna índole con Ferrocarriles Argentinos Sociedad Anónima Unipersonal (FASE S.A.U.) ni con Operadora Ferroviaria Sociedad Anónima (SOFSE S.A.). 
+El proyecto no posee vinculación jurídica, administrativa, comercial, laboral, institucional ni societaria de ninguna índole con Ferrocarriles Argentinos Sociedad Anónima Unipersonal (FASAU) ni con Operadora Ferroviaria Sociedad Anónima (SOFSA, ex SOFSE). 
 
 Todas las marcas registradas, nombres comerciales, logotipos, isotipos e imagotipos exhibidos en este repositorio pertenecen de manera exclusiva a sus respectivos titulares legítimos y se utilizan en este ámbito exclusivamente bajo fines de referencia técnica e información pública.
